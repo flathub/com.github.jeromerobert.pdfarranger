@@ -1,0 +1,12 @@
+diff --git a/data/com.github.jeromerobert.pdfarranger.metainfo.xml b/data/com.github.jeromerobert.pdfarranger.metainfo.xml
+index 0cae782..e62fe9f 100644
+--- a/data/com.github.jeromerobert.pdfarranger.metainfo.xml
++++ b/data/com.github.jeromerobert.pdfarranger.metainfo.xml
+@@ -7,7 +7,6 @@ See file COPYING or go to <http://www.gnu.org/licenses/> for full license detail
+ -->
+ <component type="desktop-application">
+   <id>com.github.jeromerobert.pdfarranger</id>
+-  <id type="desktop">pdfarranger.desktop</id>
+   <name>PDF Arranger</name>
+   <summary>PDF file merging, rearranging, and splitting</summary>
+   <launchable type="desktop-id">com.github.jeromerobert.pdfarranger.desktop</launchable>

@@ -5,13 +5,6 @@ runtime-version: '3.36'
 sdk: org.gnome.Sdk
 command: pdfarranger
 
-# These renames will be obsolete with 
-# https://github.com/jeromerobert/pdfarranger/issues/158
-# Currently known bug: Missing icon in about dialog (Will be fixed by #158.)
-rename-icon: pdfarranger
-rename-desktop-file: pdfarranger.desktop
-rename-appdata-file: pdfarranger.appdata.xml
-
 finish-args:
   - --socket=wayland
   - --socket=x11
@@ -47,8 +40,8 @@ modules:
     build-commands:
       - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} lxml-*.whl pikepdf-*.whl
     sources:
-      - url: https://files.pythonhosted.org/packages/38/e8/9cce836a4b910e3928125d5566592b6531a791cfd7e90636d5104c497c65/pikepdf-1.10.3-cp37-cp37m-manylinux2010_x86_64.whl
-        sha256: 9f05a5f74ba58a2ae050da1bca44a0663f5ef94f42255225f44e38d0c60439af
+      - url: https://files.pythonhosted.org/packages/8a/ed/e06c41dfdbb28aa6eaa1967885b874671e978138fa89bf7a832f7b85fd4d/pikepdf-1.11.0-cp37-cp37m-manylinux2010_x86_64.whl
+        sha256: d572f3c307c7ce87a3d674d111b1a368731ece948d92257acbc18c8109f9834e
         type: file
       - url: https://files.pythonhosted.org/packages/85/9e/93e2c3af278c7c8b6826666bbcb145af2829bd761c3b329e51cd6343836c/lxml-4.5.0-cp37-cp37m-manylinux1_x86_64.whl
         sha256: fd52e796fee7171c4361d441796b64df1acfceb51f29e545e812f16d023c4bbc
@@ -60,10 +53,10 @@ modules:
       - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} .
     sources:
       - url: https://github.com/jeromerobert/pdfarranger
-        tag: 1.4.2
-        commit: b1622c9244b3c1ec005bdd458864bf580c7dcd68
+        tag: 1.5.0
+        commit: d43604a0b41a78c5ea43dbab07249153171e388f
         type: git
-      - path: appdata.patch # already in upstream/master but not in 1.4.2
+      - path: appdata-id.patch # PR https://github.com/jeromerobert/pdfarranger/pull/179
         type: patch
 
 cleanup:

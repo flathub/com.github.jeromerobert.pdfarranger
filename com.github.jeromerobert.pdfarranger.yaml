@@ -53,11 +53,9 @@ modules:
       - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} .
     sources:
       - url: https://github.com/jeromerobert/pdfarranger
-        tag: 1.5.0
-        commit: d43604a0b41a78c5ea43dbab07249153171e388f
+        tag: 1.5.1
+        commit: 5122eeb8fba4c77b7f95fff1c21137567fb5b1ec
         type: git
-      - path: appdata-id.patch # PR https://github.com/jeromerobert/pdfarranger/pull/179
-        type: patch
 
 cleanup:
   - /include

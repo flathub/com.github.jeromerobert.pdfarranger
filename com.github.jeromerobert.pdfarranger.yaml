@@ -40,11 +40,11 @@ modules:
     build-commands:
       - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} lxml-*.whl pikepdf-*.whl
     sources:
-      - url: https://files.pythonhosted.org/packages/36/d2/e6967d9fba37a1546a2df8b399507309d1e574664ce3960e064cde338b80/pikepdf-1.13.0-cp37-cp37m-manylinux2010_x86_64.whl
-        sha256: 641f9f420bf6fd421d6dcb5a4b8484e992d349af2fa0dbbd5af78c4b84ee14e8
+      - url: https://files.pythonhosted.org/packages/d4/26/b6e65898fee3bcb49ed98a738ab9100060f92fd9a6c61b2313c22f13e08b/pikepdf-1.15.1-cp37-cp37m-manylinux2010_x86_64.whl
+        sha256: 61daf7abdbb210ec91af326e4c56322ce0dfba30cd29e12bc77eda54830ac0cc
         type: file
-      - url: https://files.pythonhosted.org/packages/85/9e/93e2c3af278c7c8b6826666bbcb145af2829bd761c3b329e51cd6343836c/lxml-4.5.0-cp37-cp37m-manylinux1_x86_64.whl
-        sha256: fd52e796fee7171c4361d441796b64df1acfceb51f29e545e812f16d023c4bbc
+      - url: https://files.pythonhosted.org/packages/ba/39/0b5d76e64681243db516491bc449eff847d2708b465b60465b31ca13522e/lxml-4.5.1-cp37-cp37m-manylinux1_x86_64.whl
+        sha256: afb53edf1046599991fb4a7d03e601ab5f5422a5435c47ee6ba91ec3b61416a6
         type: file
 
   - name: pdfarranger

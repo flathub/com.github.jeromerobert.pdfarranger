@@ -22,8 +22,8 @@ modules:
       - -DENABLE_CPP=OFF
       - -DENABLE_QT5=OFF
     sources:
-      - url: https://poppler.freedesktop.org/poppler-0.88.0.tar.xz
-        sha256: b4453804e9a5a519e6ceee0ac8f5efc229e3b0bf70419263c239124474d256c7
+      - url: https://poppler.freedesktop.org/poppler-0.90.1.tar.xz
+        sha256: 984d82e72e91418d280885298c8bdc855a2fd92665fd52a1345b27235e0c71c4
         type: archive
 
   - name: python-distutils-extra
@@ -38,13 +38,16 @@ modules:
   - name: pikepdf
     buildsystem: simple
     build-commands:
-      - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} lxml-*.whl pikepdf-*.whl
+      - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} lxml-*.whl pikepdf-*.whl Pillow-*.whl
     sources:
-      - url: https://files.pythonhosted.org/packages/d4/26/b6e65898fee3bcb49ed98a738ab9100060f92fd9a6c61b2313c22f13e08b/pikepdf-1.15.1-cp37-cp37m-manylinux2010_x86_64.whl
-        sha256: 61daf7abdbb210ec91af326e4c56322ce0dfba30cd29e12bc77eda54830ac0cc
+      - url: https://files.pythonhosted.org/packages/50/d4/de2e3a2a0d856a6d80ad2d58e76b11325fa9d3eb7749f69cb3e3cc797def/pikepdf-1.17.1-cp37-cp37m-manylinux2010_x86_64.whl
+        sha256: b59c1558ddf99fe2ba7d03bc2d8873653452ba89c0d5d170ef1092949a785fce
         type: file
-      - url: https://files.pythonhosted.org/packages/ba/39/0b5d76e64681243db516491bc449eff847d2708b465b60465b31ca13522e/lxml-4.5.1-cp37-cp37m-manylinux1_x86_64.whl
-        sha256: afb53edf1046599991fb4a7d03e601ab5f5422a5435c47ee6ba91ec3b61416a6
+      - url: https://files.pythonhosted.org/packages/de/3c/fa420469c0d4f62ae39f19ee6505f90d00ae469f6264f4f54e61ed9d9a2c/lxml-4.5.2-cp37-cp37m-manylinux1_x86_64.whl
+        sha256: a76979f728dd845655026ab991df25d26379a1a8fc1e9e68e25c7eda43004bed
+        type: file
+      - url: https://files.pythonhosted.org/packages/e8/f2/6722dd0c22e3a143ac792ccb2424924ac72af4adea756b1165b4cad50da7/Pillow-7.2.0-cp37-cp37m-manylinux1_x86_64.whl
+        sha256: 52125833b070791fcb5710fabc640fc1df07d087fc0c0f02d3661f76c23c5b8b
         type: file
 
   - name: pdfarranger
@@ -53,8 +56,8 @@ modules:
       - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} .
     sources:
       - url: https://github.com/jeromerobert/pdfarranger
-        tag: 1.5.3
-        commit: 5cfcf50d66f6f132a849ab4e826798e833e61225
+        tag: 1.6.0
+        commit: 7adfef62eae031970fb5c208288bcad672f59f17
         type: git
 
 cleanup:

@@ -38,7 +38,7 @@ modules:
   - name: pikepdf
     buildsystem: simple
     build-commands:
-      - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} lxml-*.whl pikepdf-*.whl Pillow-*.whl
+      - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} lxml-*.whl pikepdf-*.whl Pillow-*.whl img2pdf-*.tar.gz
     sources:
       - url: https://files.pythonhosted.org/packages/50/d4/de2e3a2a0d856a6d80ad2d58e76b11325fa9d3eb7749f69cb3e3cc797def/pikepdf-1.17.1-cp37-cp37m-manylinux2010_x86_64.whl
         sha256: b59c1558ddf99fe2ba7d03bc2d8873653452ba89c0d5d170ef1092949a785fce
@@ -48,6 +48,9 @@ modules:
         type: file
       - url: https://files.pythonhosted.org/packages/e8/f2/6722dd0c22e3a143ac792ccb2424924ac72af4adea756b1165b4cad50da7/Pillow-7.2.0-cp37-cp37m-manylinux1_x86_64.whl
         sha256: 52125833b070791fcb5710fabc640fc1df07d087fc0c0f02d3661f76c23c5b8b
+        type: file
+      - url: https://files.pythonhosted.org/packages/65/12/6ee1a77614df6decefd88f781cf95b73acf93f0cc9eb03bd5042d116b85d/img2pdf-0.3.6.tar.gz
+        sha256: 8cd5509a60b75f4442b897bad3d593e25ebd314105f3034a8f17def396a4a0fb
         type: file
 
   - name: pdfarranger

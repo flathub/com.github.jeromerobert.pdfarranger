@@ -40,8 +40,8 @@ modules:
     build-commands:
       - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} lxml-*.whl pikepdf-*.whl Pillow-*.whl img2pdf-*.tar.gz
     sources:
-      - url: https://files.pythonhosted.org/packages/50/d4/de2e3a2a0d856a6d80ad2d58e76b11325fa9d3eb7749f69cb3e3cc797def/pikepdf-1.17.1-cp37-cp37m-manylinux2010_x86_64.whl
-        sha256: b59c1558ddf99fe2ba7d03bc2d8873653452ba89c0d5d170ef1092949a785fce
+      - url: https://files.pythonhosted.org/packages/2c/dd/aa86f453a6a63b1398543ed34e68e51290c4334bc9d7b11ad4ab7f4f2bab/pikepdf-1.17.3-cp37-cp37m-manylinux2010_x86_64.whl
+        sha256: e0666d19ec6e7d05bc893068baabf6f4a40867ced0e22026f9b56fff084220e4
         type: file
       - url: https://files.pythonhosted.org/packages/de/3c/fa420469c0d4f62ae39f19ee6505f90d00ae469f6264f4f54e61ed9d9a2c/lxml-4.5.2-cp37-cp37m-manylinux1_x86_64.whl
         sha256: a76979f728dd845655026ab991df25d26379a1a8fc1e9e68e25c7eda43004bed
@@ -59,8 +59,8 @@ modules:
       - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} .
     sources:
       - url: https://github.com/jeromerobert/pdfarranger
-        tag: 1.6.0
-        commit: 7adfef62eae031970fb5c208288bcad672f59f17
+        tag: 1.6.2
+        commit: 81a49272b3166a136d4d7e3ecb5022bf62186bc1
         type: git
 
 cleanup:

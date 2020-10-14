@@ -40,14 +40,14 @@ modules:
     build-commands:
       - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} lxml-*.whl pikepdf-*.whl Pillow-*.whl img2pdf-*.tar.gz
     sources:
-      - url: https://files.pythonhosted.org/packages/2c/dd/aa86f453a6a63b1398543ed34e68e51290c4334bc9d7b11ad4ab7f4f2bab/pikepdf-1.17.3-cp37-cp37m-manylinux2010_x86_64.whl
-        sha256: e0666d19ec6e7d05bc893068baabf6f4a40867ced0e22026f9b56fff084220e4
+      - url: https://files.pythonhosted.org/packages/38/50/0d588e236645220521a583b15093d645bd2586761bcbc4c3242697694ade/pikepdf-1.19.3-cp38-cp38-manylinux2010_x86_64.whl
+        sha256: 304553140d85ab789994cbe218813e5e7b60d7c033c3fbe504d7b82f811f0c96
         type: file
-      - url: https://files.pythonhosted.org/packages/de/3c/fa420469c0d4f62ae39f19ee6505f90d00ae469f6264f4f54e61ed9d9a2c/lxml-4.5.2-cp37-cp37m-manylinux1_x86_64.whl
-        sha256: a76979f728dd845655026ab991df25d26379a1a8fc1e9e68e25c7eda43004bed
+      - url: https://files.pythonhosted.org/packages/b7/51/fe28c128985b6a38fbcd091110e1e53846bf900cf143b04a071f2c1c81e7/lxml-4.5.2-cp38-cp38-manylinux1_x86_64.whl
+        sha256: aa8eba3db3d8761db161003e2d0586608092e217151d7458206e243be5a43843
         type: file
-      - url: https://files.pythonhosted.org/packages/e8/f2/6722dd0c22e3a143ac792ccb2424924ac72af4adea756b1165b4cad50da7/Pillow-7.2.0-cp37-cp37m-manylinux1_x86_64.whl
-        sha256: 52125833b070791fcb5710fabc640fc1df07d087fc0c0f02d3661f76c23c5b8b
+      - url: https://files.pythonhosted.org/packages/aa/12/a5e5e1b9bcd6c16eb4833069e6d586dc2b8ebbd3141a369cb1bdb9e4cc04/Pillow-7.2.0-cp38-cp38-manylinux1_x86_64.whl
+        sha256: d08b23fdb388c0715990cbc06866db554e1822c4bdcf6d4166cf30ac82df8c41
         type: file
       - url: https://files.pythonhosted.org/packages/65/12/6ee1a77614df6decefd88f781cf95b73acf93f0cc9eb03bd5042d116b85d/img2pdf-0.3.6.tar.gz
         sha256: 8cd5509a60b75f4442b897bad3d593e25ebd314105f3034a8f17def396a4a0fb

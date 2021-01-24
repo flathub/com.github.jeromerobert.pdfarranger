@@ -13,7 +13,6 @@ finish-args:
 
 modules:
   - shared-modules/intltool/intltool-0.51.json
-  - shared-modules/openjpeg/openjpeg.json # dependency of poppler
 
   - name: poppler
     buildsystem: cmake-ninja
@@ -22,8 +21,8 @@ modules:
       - -DENABLE_CPP=OFF
       - -DENABLE_QT5=OFF
     sources:
-      - url: https://poppler.freedesktop.org/poppler-0.90.1.tar.xz
-        sha256: 984d82e72e91418d280885298c8bdc855a2fd92665fd52a1345b27235e0c71c4
+      - url: https://poppler.freedesktop.org/poppler-21.01.0.tar.xz
+        sha256: 016dde34e5f868ea98a32ca99b643325a9682281500942b7113f4ec88d20e2f3
         type: archive
 
   - name: python-distutils-extra
@@ -38,19 +37,22 @@ modules:
   - name: pikepdf
     buildsystem: simple
     build-commands:
-      - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} lxml-*.whl pikepdf-*.whl Pillow-*.whl img2pdf-*.tar.gz
+      - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} lxml-*.whl pikepdf-*.whl Pillow-*.whl img2pdf-*.tar.gz python_dateutil-*.whl
     sources:
-      - url: https://files.pythonhosted.org/packages/38/50/0d588e236645220521a583b15093d645bd2586761bcbc4c3242697694ade/pikepdf-1.19.3-cp38-cp38-manylinux2010_x86_64.whl
-        sha256: 304553140d85ab789994cbe218813e5e7b60d7c033c3fbe504d7b82f811f0c96
+      - url: https://files.pythonhosted.org/packages/f2/fd/43296bd14ece0cf6c355826587cd3db9a787d19b178b3886d84dd6263fa1/pikepdf-2.4.0-cp38-cp38-manylinux2010_x86_64.whl
+        sha256: 5b05745d1c0772925929a2758898faae238ed9c7d1107f512128931355091640
         type: file
-      - url: https://files.pythonhosted.org/packages/b7/51/fe28c128985b6a38fbcd091110e1e53846bf900cf143b04a071f2c1c81e7/lxml-4.5.2-cp38-cp38-manylinux1_x86_64.whl
-        sha256: aa8eba3db3d8761db161003e2d0586608092e217151d7458206e243be5a43843
+      - url: https://files.pythonhosted.org/packages/52/a5/98a73a83bb06d271c3f915a4a13f9613fdd8a685524f46d9733eebeb55ce/lxml-4.6.2-cp38-cp38-manylinux1_x86_64.whl
+        sha256: 2e5cc908fe43fe1aa299e58046ad66981131a66aea3129aac7770c37f590a644
         type: file
-      - url: https://files.pythonhosted.org/packages/aa/12/a5e5e1b9bcd6c16eb4833069e6d586dc2b8ebbd3141a369cb1bdb9e4cc04/Pillow-7.2.0-cp38-cp38-manylinux1_x86_64.whl
-        sha256: d08b23fdb388c0715990cbc06866db554e1822c4bdcf6d4166cf30ac82df8c41
+      - url: https://files.pythonhosted.org/packages/c9/57/a6c81c1d6b8973d288ec6df0993a71a61318c862afc1de71fd3aa1ba1dcd/Pillow-8.1.0-cp38-cp38-manylinux1_x86_64.whl
+        sha256: cdbbe7dff4a677fb555a54f9bc0450f2a21a93c5ba2b44e09e54fcb72d2bd13d
         type: file
-      - url: https://files.pythonhosted.org/packages/65/12/6ee1a77614df6decefd88f781cf95b73acf93f0cc9eb03bd5042d116b85d/img2pdf-0.3.6.tar.gz
-        sha256: 8cd5509a60b75f4442b897bad3d593e25ebd314105f3034a8f17def396a4a0fb
+      - url: https://files.pythonhosted.org/packages/80/ed/5167992abaf268f5a5867e974d9d36a8fa4802800898ec711f4e1942b4f5/img2pdf-0.4.0.tar.gz
+        sha256: eaee690ab8403dd1a9cb4db10afee41dd3e6c7ed63bdace02a0121f9feadb0c9
+        type: file
+      - url: https://files.pythonhosted.org/packages/d4/70/d60450c3dd48ef87586924207ae8907090de0b306af2bce5d134d78615cb/python_dateutil-2.8.1-py2.py3-none-any.whl
+        sha256: 75bb3f31ea686f1197762692a9ee6a7550b59fc6ca3a1f4b5d7e32fb98e2da2a
         type: file
 
   - name: pdfarranger
@@ -59,8 +61,8 @@ modules:
       - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} .
     sources:
       - url: https://github.com/jeromerobert/pdfarranger
-        tag: 1.6.2
-        commit: 81a49272b3166a136d4d7e3ecb5022bf62186bc1
+        tag: 1.7.0
+        commit: 979b78ce81bf026ec6ab9bcbb039040496ea34f9
         type: git
 
 cleanup:

@@ -59,8 +59,8 @@ modules:
     build-commands:
       - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} .
     sources:
-      - url: https://github.com/jeromerobert/pdfarranger
-        commit: 2e9918bb8d56cbdf6024dbfb3c363579f29a4e7a
+      - url: https://github.com/dreua/pdfarranger
+        commit: 402b59c954214e9bc46bffd4e55f36bca819dd1e
         type: git
 
 cleanup:

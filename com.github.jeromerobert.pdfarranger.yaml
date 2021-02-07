@@ -60,7 +60,7 @@ modules:
       - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} .
     sources:
       - url: https://github.com/dreua/pdfarranger
-        commit: 402b59c954214e9bc46bffd4e55f36bca819dd1e
+        commit: c331ebc9229390fa7cf557081e13c124271e29bf
         type: git
 
 cleanup:

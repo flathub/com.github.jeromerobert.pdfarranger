@@ -60,7 +60,7 @@ modules:
     build-commands:
       - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} .
     sources:
-      - url: https://github.com/jeromerobert/pdfarranger
+      - url: https://github.com/pdfarranger/pdfarranger
         tag: 1.7.0
         commit: 979b78ce81bf026ec6ab9bcbb039040496ea34f9
         type: git

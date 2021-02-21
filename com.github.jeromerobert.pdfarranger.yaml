@@ -34,25 +34,63 @@ modules:
         sha256: 723f24f4d65fc8d99b33a002fbbb3771d4cc9d664c97085bf37f3997ae8063af
         type: archive
 
-  - name: pikepdf
+  - name: pikepdf-deps
     buildsystem: simple
     build-commands:
-      - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} lxml-*.whl pikepdf-*.whl Pillow-*.whl img2pdf-*.tar.gz python_dateutil-*.whl
+      - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} lxml-*.tar.gz Pillow-*.tar.gz python_dateutil-*.whl
     sources:
-      - url: https://files.pythonhosted.org/packages/bc/60/310e5bb405901b6fd1de15e2d58fbaf25d85b6f56d56070c20aa3726f2d5/pikepdf-2.9.0-cp38-cp38-manylinux2010_x86_64.whl
-        sha256: 72517071904cb7ccc370217f5273e6a05683367927c5655e41428bb48304367c
+      - url: https://files.pythonhosted.org/packages/db/f7/43fecb94d66959c1e23aa53d6161231dca0e93ec500224cf31b3c4073e37/lxml-4.6.2.tar.gz
+        sha256: cd11c7e8d21af997ee8079037fff88f16fda188a9776eb4b81c7e4c9c0a7d7fc
         type: file
-      - url: https://files.pythonhosted.org/packages/52/a5/98a73a83bb06d271c3f915a4a13f9613fdd8a685524f46d9733eebeb55ce/lxml-4.6.2-cp38-cp38-manylinux1_x86_64.whl
-        sha256: 2e5cc908fe43fe1aa299e58046ad66981131a66aea3129aac7770c37f590a644
-        type: file
-      - url: https://files.pythonhosted.org/packages/c7/c8/4ed5b70460feb63105f9668dc1416992efa92213d0cce8f6a8073b88fe73/Pillow-8.1.2-cp38-cp38-manylinux1_x86_64.whl
-        sha256: 15306d71a1e96d7e271fd2a0737038b5a92ca2978d2e38b6ced7966583e3d5af
-        type: file
-      - url: https://files.pythonhosted.org/packages/80/ed/5167992abaf268f5a5867e974d9d36a8fa4802800898ec711f4e1942b4f5/img2pdf-0.4.0.tar.gz
-        sha256: eaee690ab8403dd1a9cb4db10afee41dd3e6c7ed63bdace02a0121f9feadb0c9
+      - url: https://files.pythonhosted.org/packages/60/f0/dd2eb7911f948bf529f58f0c7931f6f6466f711bd6f1d81a69dc4edd4e2a/Pillow-8.1.2.tar.gz
+        sha256: b07c660e014852d98a00a91adfbe25033898a9d90a8f39beb2437d22a203fc44
         type: file
       - url: https://files.pythonhosted.org/packages/d4/70/d60450c3dd48ef87586924207ae8907090de0b306af2bce5d134d78615cb/python_dateutil-2.8.1-py2.py3-none-any.whl
         sha256: 75bb3f31ea686f1197762692a9ee6a7550b59fc6ca3a1f4b5d7e32fb98e2da2a
+        type: file
+
+  - name: pikepdf-src
+    buildsystem: simple
+    build-commands:
+      - python3 setup.py install --prefix=/app --root=/
+    sources:
+      - url: https://files.pythonhosted.org/packages/74/a3/3d7186d3a44c8686e2f0fef3f71d8c5f3a28acbecd4e7a7bc48a61b7c724/pikepdf-2.9.0.tar.gz
+        sha256: a9dbd2bb52fcdecb066c99cacf96f0ebb40edee50d8885502a5a22d7f723a8b7
+        type: archive
+      - path: 0001-Relax-some-requirements.patch
+        type: patch
+    modules:
+      - name: qpdf
+        sources:
+        - url: https://github.com/qpdf/qpdf/releases/download/release-qpdf-10.1.0/qpdf-10.1.0.tar.gz
+          type: archive
+          sha256: 862c144e4516302327cea908f2879131cc8198b10d3d3a90ef7bc006a915120d
+
+      - name: pikepdf-src-deps
+        buildsystem: simple
+        build-commands:
+          - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} setuptools_scm-*.whl setuptools_scm_git_archive-*.whl toml-*.whl pybind11-*.whl
+        sources:
+          - url: https://files.pythonhosted.org/packages/44/6f/7120676b6d73228c96e17f1f794d8ab046fc910d781c8d151120c3f1569e/toml-0.10.2-py2.py3-none-any.whl
+            sha256: 806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b
+            type: file
+          - url: https://files.pythonhosted.org/packages/00/84/fc9dc13ee536ba5e6b8fd10ce368fea5b738fe394c3b296cde7c9b144a92/pybind11-2.6.1-py2.py3-none-any.whl
+            sha256: c3691da74b670a4850dec30c1145a0dad53a50eeca78b7e7cdc855b5c98fd32d
+            type: file
+          - url: https://files.pythonhosted.org/packages/db/6e/2815f7c8561b088ccedc128681e64daac3d6b2e81a9918b007e244dad8b1/setuptools_scm-5.0.1-py2.py3-none-any.whl
+            sha256: 62fa535edb31ece9fa65dc9dcb3056145b8020c8c26c0ef1018aef33db95c40d
+            type: file
+          - url: https://files.pythonhosted.org/packages/7e/83/284c6d3fac2e74532a9f51f908018690709db9af1469cf728574f6be3abf/setuptools_scm_git_archive-1.1-py2.py3-none-any.whl
+            sha256: 3df19d1f05f70bb4b33485a88669726f1b2f14600ef2e557b927fc9cbdbfff2b
+            type: file
+
+  - name: image2pdf
+    buildsystem: simple
+    build-commands:
+      - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} img2pdf-*.tar.gz
+    sources:
+      - url: https://files.pythonhosted.org/packages/80/ed/5167992abaf268f5a5867e974d9d36a8fa4802800898ec711f4e1942b4f5/img2pdf-0.4.0.tar.gz
+        sha256: eaee690ab8403dd1a9cb4db10afee41dd3e6c7ed63bdace02a0121f9feadb0c9
         type: file
 
   - name: pdfarranger

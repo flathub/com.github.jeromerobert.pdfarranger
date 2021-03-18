@@ -21,8 +21,8 @@ modules:
       - -DENABLE_CPP=OFF
       - -DENABLE_QT5=OFF
     sources:
-      - url: https://poppler.freedesktop.org/poppler-21.01.0.tar.xz
-        sha256: 016dde34e5f868ea98a32ca99b643325a9682281500942b7113f4ec88d20e2f3
+      - url: https://poppler.freedesktop.org/poppler-21.03.0.tar.xz
+        sha256: fd51ead4aac1d2f4684fa6e7b0ec06f0233ed21667e720a4e817e4455dd63d27
         type: archive
 
   - name: python-distutils-extra
@@ -39,14 +39,14 @@ modules:
     build-commands:
       - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} lxml-*.whl pikepdf-*.whl Pillow-*.whl img2pdf-*.tar.gz python_dateutil-*.whl
     sources:
-      - url: https://files.pythonhosted.org/packages/f2/fd/43296bd14ece0cf6c355826587cd3db9a787d19b178b3886d84dd6263fa1/pikepdf-2.4.0-cp38-cp38-manylinux2010_x86_64.whl
-        sha256: 5b05745d1c0772925929a2758898faae238ed9c7d1107f512128931355091640
+      - url: https://files.pythonhosted.org/packages/bc/60/310e5bb405901b6fd1de15e2d58fbaf25d85b6f56d56070c20aa3726f2d5/pikepdf-2.9.0-cp38-cp38-manylinux2010_x86_64.whl
+        sha256: 72517071904cb7ccc370217f5273e6a05683367927c5655e41428bb48304367c
         type: file
       - url: https://files.pythonhosted.org/packages/52/a5/98a73a83bb06d271c3f915a4a13f9613fdd8a685524f46d9733eebeb55ce/lxml-4.6.2-cp38-cp38-manylinux1_x86_64.whl
         sha256: 2e5cc908fe43fe1aa299e58046ad66981131a66aea3129aac7770c37f590a644
         type: file
-      - url: https://files.pythonhosted.org/packages/c9/57/a6c81c1d6b8973d288ec6df0993a71a61318c862afc1de71fd3aa1ba1dcd/Pillow-8.1.0-cp38-cp38-manylinux1_x86_64.whl
-        sha256: cdbbe7dff4a677fb555a54f9bc0450f2a21a93c5ba2b44e09e54fcb72d2bd13d
+      - url: https://files.pythonhosted.org/packages/c7/c8/4ed5b70460feb63105f9668dc1416992efa92213d0cce8f6a8073b88fe73/Pillow-8.1.2-cp38-cp38-manylinux1_x86_64.whl
+        sha256: 15306d71a1e96d7e271fd2a0737038b5a92ca2978d2e38b6ced7966583e3d5af
         type: file
       - url: https://files.pythonhosted.org/packages/80/ed/5167992abaf268f5a5867e974d9d36a8fa4802800898ec711f4e1942b4f5/img2pdf-0.4.0.tar.gz
         sha256: eaee690ab8403dd1a9cb4db10afee41dd3e6c7ed63bdace02a0121f9feadb0c9
@@ -61,8 +61,8 @@ modules:
       - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} .
     sources:
       - url: https://github.com/pdfarranger/pdfarranger
-        tag: 1.7.0
-        commit: 979b78ce81bf026ec6ab9bcbb039040496ea34f9
+        tag: 1.7.1
+        commit: 6acbca2e564e339fd1bae25c0bbd2ee4fea177ac
         type: git
 
 cleanup:

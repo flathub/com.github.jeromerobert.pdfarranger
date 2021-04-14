@@ -39,8 +39,8 @@ modules:
     build-commands:
       - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} lxml-*.whl pikepdf-*.whl Pillow-*.whl img2pdf-*.tar.gz python_dateutil-*.whl
     sources:
-      - url: https://files.pythonhosted.org/packages/bc/60/310e5bb405901b6fd1de15e2d58fbaf25d85b6f56d56070c20aa3726f2d5/pikepdf-2.9.0-cp38-cp38-manylinux2010_x86_64.whl
-        sha256: 72517071904cb7ccc370217f5273e6a05683367927c5655e41428bb48304367c
+      - url: https://files.pythonhosted.org/packages/af/c9/e6ee21b1c47457998e31ed8a0c58743f1b0a1f7c3350be7a2799aafa03b3/pikepdf-2.11.1-cp38-cp38-manylinux2010_x86_64.whl
+        sha256: 9d4a1cc8da1860d8772e831b03ea05386ae6a805718cd8621de736725d52a901
         type: file
       - url: https://files.pythonhosted.org/packages/52/a5/98a73a83bb06d271c3f915a4a13f9613fdd8a685524f46d9733eebeb55ce/lxml-4.6.2-cp38-cp38-manylinux1_x86_64.whl
         sha256: 2e5cc908fe43fe1aa299e58046ad66981131a66aea3129aac7770c37f590a644

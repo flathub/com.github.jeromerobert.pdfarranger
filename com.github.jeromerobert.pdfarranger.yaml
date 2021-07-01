@@ -37,13 +37,10 @@ modules:
   - name: pikepdf
     buildsystem: simple
     build-commands:
-      - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} lxml-*.whl pikepdf-*.whl Pillow-*.whl img2pdf-*.tar.gz python_dateutil-*.whl
+      - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} pikepdf-*.whl Pillow-*.whl img2pdf-*.tar.gz python_dateutil-*.whl
     sources:
       - url: https://files.pythonhosted.org/packages/af/c9/e6ee21b1c47457998e31ed8a0c58743f1b0a1f7c3350be7a2799aafa03b3/pikepdf-2.11.1-cp38-cp38-manylinux2010_x86_64.whl
         sha256: 9d4a1cc8da1860d8772e831b03ea05386ae6a805718cd8621de736725d52a901
-        type: file
-      - url: https://files.pythonhosted.org/packages/52/a5/98a73a83bb06d271c3f915a4a13f9613fdd8a685524f46d9733eebeb55ce/lxml-4.6.2-cp38-cp38-manylinux1_x86_64.whl
-        sha256: 2e5cc908fe43fe1aa299e58046ad66981131a66aea3129aac7770c37f590a644
         type: file
       - url: https://files.pythonhosted.org/packages/c7/c8/4ed5b70460feb63105f9668dc1416992efa92213d0cce8f6a8073b88fe73/Pillow-8.1.2-cp38-cp38-manylinux1_x86_64.whl
         sha256: 15306d71a1e96d7e271fd2a0737038b5a92ca2978d2e38b6ced7966583e3d5af

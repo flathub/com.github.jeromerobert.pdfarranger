@@ -21,8 +21,8 @@ modules:
       - -DENABLE_CPP=OFF
       - -DENABLE_QT5=OFF
     sources:
-      - url: https://poppler.freedesktop.org/poppler-21.03.0.tar.xz
-        sha256: fd51ead4aac1d2f4684fa6e7b0ec06f0233ed21667e720a4e817e4455dd63d27
+      - url: https://poppler.freedesktop.org/poppler-21.10.0.tar.xz
+        sha256: 964b5b16290fbec3fae57c2a5bcdea49bb0736bd750c3a3711c47995c9efc394
         type: archive
 
   - name: python-distutils-extra

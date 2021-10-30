@@ -54,29 +54,13 @@ modules:
         sha256: e24dff6af31f1eb732fcb5db4678835d1f312643996fdcd9dbeb8aca52bc0dde
         type: archive
     modules:
+      - python3-lxml.json
       - python3-pikepdf-deps.json
       - name: qpdf
         sources:
         - url: https://github.com/qpdf/qpdf/releases/download/release-qpdf-10.1.0/qpdf-10.1.0.tar.gz
           type: archive
           sha256: 862c144e4516302327cea908f2879131cc8198b10d3d3a90ef7bc006a915120d
-      - name: pikepdf-src-deps
-        buildsystem: simple
-        build-commands:
-          - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} setuptools_scm-*.whl setuptools_scm_git_archive-*.whl toml-*.whl pybind11-*.whl
-        sources:
-          - url: https://files.pythonhosted.org/packages/44/6f/7120676b6d73228c96e17f1f794d8ab046fc910d781c8d151120c3f1569e/toml-0.10.2-py2.py3-none-any.whl
-            sha256: 806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b
-            type: file
-          - url: https://files.pythonhosted.org/packages/00/84/fc9dc13ee536ba5e6b8fd10ce368fea5b738fe394c3b296cde7c9b144a92/pybind11-2.6.1-py2.py3-none-any.whl
-            sha256: c3691da74b670a4850dec30c1145a0dad53a50eeca78b7e7cdc855b5c98fd32d
-            type: file
-          - url: https://files.pythonhosted.org/packages/db/6e/2815f7c8561b088ccedc128681e64daac3d6b2e81a9918b007e244dad8b1/setuptools_scm-5.0.1-py2.py3-none-any.whl
-            sha256: 62fa535edb31ece9fa65dc9dcb3056145b8020c8c26c0ef1018aef33db95c40d
-            type: file
-          - url: https://files.pythonhosted.org/packages/7e/83/284c6d3fac2e74532a9f51f908018690709db9af1469cf728574f6be3abf/setuptools_scm_git_archive-1.1-py2.py3-none-any.whl
-            sha256: 3df19d1f05f70bb4b33485a88669726f1b2f14600ef2e557b927fc9cbdbfff2b
-            type: file
 
   - name: image2pdf
     buildsystem: simple
@@ -97,6 +81,7 @@ modules:
         sha256: eaee690ab8403dd1a9cb4db10afee41dd3e6c7ed63bdace02a0121f9feadb0c9
         type: file
 
+  - python3-python-dateutil.json
   - name: pdfarranger
     buildsystem: simple
     build-commands:

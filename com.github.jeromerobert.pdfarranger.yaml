@@ -80,7 +80,7 @@ modules:
   - name: pdfarranger
     buildsystem: simple
     build-commands:
-      - pip3 install --no-index --no-deps --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} .
+      - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} .
     sources:
       - url: https://github.com/pdfarranger/pdfarranger
         tag: 1.7.1

@@ -24,6 +24,11 @@ modules:
       - url: https://poppler.freedesktop.org/poppler-21.03.0.tar.xz
         sha256: fd51ead4aac1d2f4684fa6e7b0ec06f0233ed21667e720a4e817e4455dd63d27
         type: archive
+        x-checker-data:
+          type: anitya
+          project-id: 3686
+          stable-only: true
+          url-template: https://poppler.freedesktop.org/poppler-$version.tar.xz
 
   - name: python-distutils-extra
     buildsystem: simple
@@ -33,6 +38,11 @@ modules:
       - url: https://launchpad.net/python-distutils-extra/trunk/2.39/+download/python-distutils-extra-2.39.tar.gz
         sha256: 723f24f4d65fc8d99b33a002fbbb3771d4cc9d664c97085bf37f3997ae8063af
         type: archive
+        x-checker-data:
+          type: anitya
+          project-id: 3827
+          stable-only: true
+          url-template: https://launchpad.net/python-distutils-extra/trunk/$version/+download/python-distutils-extra-$version.tar.gz
 
   - name: pikepdf
     buildsystem: simple
@@ -42,6 +52,10 @@ modules:
       - url: https://files.pythonhosted.org/packages/af/c9/e6ee21b1c47457998e31ed8a0c58743f1b0a1f7c3350be7a2799aafa03b3/pikepdf-2.11.1-cp38-cp38-manylinux2010_x86_64.whl
         sha256: 9d4a1cc8da1860d8772e831b03ea05386ae6a805718cd8621de736725d52a901
         type: file
+        x-checker-data:
+          type: pypi
+          name: pikepdf
+
       - url: https://files.pythonhosted.org/packages/c7/c8/4ed5b70460feb63105f9668dc1416992efa92213d0cce8f6a8073b88fe73/Pillow-8.1.2-cp38-cp38-manylinux1_x86_64.whl
         sha256: 15306d71a1e96d7e271fd2a0737038b5a92ca2978d2e38b6ced7966583e3d5af
         type: file

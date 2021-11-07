@@ -1,4 +1,3 @@
----
 id: com.github.jeromerobert.pdfarranger
 runtime: org.gnome.Platform
 runtime-version: '41'
@@ -22,8 +21,8 @@ modules:
       - -DENABLE_QT5=OFF
       - -DENABLE_BOOST=OFF
     sources:
-      - url: https://poppler.freedesktop.org/poppler-21.10.0.tar.xz
-        sha256: 964b5b16290fbec3fae57c2a5bcdea49bb0736bd750c3a3711c47995c9efc394
+      - url: https://poppler.freedesktop.org/poppler-21.11.0.tar.xz
+        sha256: 31b76b5cac0a48612fdd154c02d9eca01fd38fb8eaa77c1196840ecdeb53a584
         type: archive
         x-checker-data:
           type: anitya
@@ -34,7 +33,8 @@ modules:
   - name: python-distutils-extra
     buildsystem: simple
     build-commands:
-      - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} .
+      - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST}
+        .
     sources:
       - url: https://launchpad.net/python-distutils-extra/trunk/2.39/+download/python-distutils-extra-2.39.tar.gz
         sha256: 723f24f4d65fc8d99b33a002fbbb3771d4cc9d664c97085bf37f3997ae8063af
@@ -50,8 +50,8 @@ modules:
     build-commands:
       - python3 setup.py install --prefix=/app --root=/
     sources:
-      - url: https://files.pythonhosted.org/packages/d3/f1/713fbf7e6138951527455dba2b4ea1af856dd7a271dbdb94aca00569c0b8/pikepdf-3.2.0.tar.gz
-        sha256: a0582f00440668c07edb8403e82724961c7812c8e6c30655e34825b2645f15cd
+      - url: https://files.pythonhosted.org/packages/d2/c1/c13710de53190182fbb851f918580337f925e6d2ea8edd68bf34ab4da9fe/pikepdf-4.0.0.tar.gz
+        sha256: 487be40a2ec463a272b4490396787c9fba2b0bbe6c44e7254e1867b1d3c02df9
         type: archive
         x-checker-data:
           type: pypi
@@ -62,19 +62,20 @@ modules:
       - python3-pikepdf-deps.json
       - name: qpdf
         sources:
-        - url: https://github.com/qpdf/qpdf/releases/download/release-qpdf-10.3.2/qpdf-10.3.2.tar.gz
-          sha256: 062808c40ef8741ec8160ae00168638a712cfa1d4bf673e8e595ab5eba1da947
-          type: archive
-          x-checker-data:
-            type: anitya
-            project-id: 5542
-            stable-only: true
-            url-template: https://github.com/qpdf/qpdf/releases/download/release-qpdf-$version/qpdf-$version.tar.gz
+          - url: https://github.com/qpdf/qpdf/releases/download/release-qpdf-10.3.2/qpdf-10.3.2.tar.gz
+            sha256: 062808c40ef8741ec8160ae00168638a712cfa1d4bf673e8e595ab5eba1da947
+            type: archive
+            x-checker-data:
+              type: anitya
+              project-id: 5542
+              stable-only: true
+              url-template: https://github.com/qpdf/qpdf/releases/download/release-qpdf-$version/qpdf-$version.tar.gz
 
   - name: image2pdf
     buildsystem: simple
     build-commands:
-      - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} img2pdf-*.tar.gz
+      - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST}
+        img2pdf-*.tar.gz
     sources:
       - url: https://files.pythonhosted.org/packages/3c/b2/0483a18ae81c99ceccffb7482b26262f01eec8dee00bb63c0546ef27789e/img2pdf-0.4.3.tar.gz
         sha256: 8e51c5043efa95d751481b516071a006f87c2a4059961a9ac43ec238915de09f
@@ -87,7 +88,8 @@ modules:
   - name: pdfarranger
     buildsystem: simple
     build-commands:
-      - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} .
+      - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST}
+        .
     sources:
       - url: https://github.com/pdfarranger/pdfarranger
         tag: 1.7.1

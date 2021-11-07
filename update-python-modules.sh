@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Workaround for pip's keyring bug
+export PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring
+
 PIP_GENERATOR=flatpak-builder-tools/pip/flatpak-pip-generator
 
 $PIP_GENERATOR lxml

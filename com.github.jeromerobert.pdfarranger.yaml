@@ -95,7 +95,7 @@ modules:
         type: git
         x-checker-data:
           type: git
-          tag-pattern: ^([\\d.]+)$
+          tag-pattern: ^([\d.]+)$
 
 
 cleanup:

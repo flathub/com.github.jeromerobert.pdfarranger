@@ -63,8 +63,13 @@ modules:
       - name: qpdf
         sources:
         - url: https://github.com/qpdf/qpdf/releases/download/release-qpdf-10.3.2/qpdf-10.3.2.tar.gz
-          type: archive
           sha256: 062808c40ef8741ec8160ae00168638a712cfa1d4bf673e8e595ab5eba1da947
+          type: archive
+          x-checker-data:
+            type: anitya
+            project-id: 5542
+            stable-only: true
+            url-template: https://github.com/qpdf/qpdf/releases/download/release-qpdf-$version/qpdf-$version.tar.gz
 
   - name: image2pdf
     buildsystem: simple
@@ -74,6 +79,9 @@ modules:
       - url: https://files.pythonhosted.org/packages/3c/b2/0483a18ae81c99ceccffb7482b26262f01eec8dee00bb63c0546ef27789e/img2pdf-0.4.3.tar.gz
         sha256: 8e51c5043efa95d751481b516071a006f87c2a4059961a9ac43ec238915de09f
         type: file
+        x-checker-data:
+          type: pypi
+          name: img2pdf
 
   - python3-python-dateutil.json
   - name: pdfarranger
@@ -85,6 +93,10 @@ modules:
         tag: 1.7.1
         commit: 6acbca2e564e339fd1bae25c0bbd2ee4fea177ac
         type: git
+        x-checker-data:
+          type: git
+          tag-pattern: ^([\\d.]+)$
+
 
 cleanup:
   - /include

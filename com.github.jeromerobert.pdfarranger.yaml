@@ -53,6 +53,10 @@ modules:
       - url: https://files.pythonhosted.org/packages/d3/f1/713fbf7e6138951527455dba2b4ea1af856dd7a271dbdb94aca00569c0b8/pikepdf-3.2.0.tar.gz
         sha256: a0582f00440668c07edb8403e82724961c7812c8e6c30655e34825b2645f15cd
         type: archive
+        x-checker-data:
+          type: pypi
+          name: pikepdf
+
     modules:
       - python3-lxml.json
       - python3-pikepdf-deps.json

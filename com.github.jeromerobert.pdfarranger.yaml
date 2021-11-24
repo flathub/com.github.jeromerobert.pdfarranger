@@ -21,8 +21,8 @@ modules:
       - -DENABLE_QT5=OFF
       - -DENABLE_BOOST=OFF
     sources:
-      - url: https://poppler.freedesktop.org/poppler-21.11.0.tar.xz
-        sha256: 31b76b5cac0a48612fdd154c02d9eca01fd38fb8eaa77c1196840ecdeb53a584
+      - url: https://poppler.freedesktop.org/poppler-21.12.0.tar.xz
+        sha256: acb840c2c1ec07d07e53c57c4b3a1ff3e3ee2d888d44e1e9f2f01aaf16814de7
         type: archive
         x-checker-data:
           type: anitya
@@ -50,8 +50,8 @@ modules:
     build-commands:
       - python3 setup.py install --prefix=/app --root=/
     sources:
-      - url: https://files.pythonhosted.org/packages/2d/f0/dce72429aac0cf136846263c227bb6aa18457b587b15cd81241fe72da5f2/pikepdf-4.0.1.post1.tar.gz
-        sha256: 533f1fc8bb8b507befde39c01222e109dcfe9ed165e2e256ce6a9b77502a3fef
+      - url: https://files.pythonhosted.org/packages/49/07/b6a6c8c5c45e27ddff1b559693a535411bf5e871212a8e4ccdd36d517634/pikepdf-4.2.0.tar.gz
+        sha256: 9a91564193f2c01a55aef4c3b97764b2cb59443034b62a95620b12eb265c647e
         type: archive
         x-checker-data:
           type: pypi
@@ -62,8 +62,8 @@ modules:
       - python3-pikepdf-deps.json
       - name: qpdf
         sources:
-          - url: https://github.com/qpdf/qpdf/releases/download/release-qpdf-10.3.2/qpdf-10.3.2.tar.gz
-            sha256: 062808c40ef8741ec8160ae00168638a712cfa1d4bf673e8e595ab5eba1da947
+          - url: https://github.com/qpdf/qpdf/releases/download/release-qpdf-10.4.0/qpdf-10.4.0.tar.gz
+            sha256: 9ac6e691cc3f35a9fe44632e3fba727e1b6ef21181c0a883287abf5cf97ae222
             type: archive
             x-checker-data:
               type: anitya
@@ -92,8 +92,8 @@ modules:
         .
     sources:
       - url: https://github.com/pdfarranger/pdfarranger
-        tag: 1.8.0
-        commit: 564dbe4a5e5caa8020d51a41b831ebb2c26ac6df
+        commit: ae27ee01ccd1a13b22b6232e2780a06a97196e3e
+        tag: 1.8.1
         type: git
         x-checker-data:
           type: git

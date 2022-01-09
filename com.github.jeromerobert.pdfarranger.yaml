@@ -47,6 +47,9 @@ modules:
 
   - name: pikepdf-src
     buildsystem: simple
+    build-options:
+        env:
+             SETUPTOOLS_USE_DISTUTILS: stdlib
     build-commands:
       - python3 setup.py install --prefix=/app --root=/
     sources:

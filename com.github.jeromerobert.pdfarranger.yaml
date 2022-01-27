@@ -48,13 +48,13 @@ modules:
   - name: pikepdf-src
     buildsystem: simple
     build-options:
-        env:
-             SETUPTOOLS_USE_DISTUTILS: stdlib
+      env:
+        SETUPTOOLS_USE_DISTUTILS: stdlib
     build-commands:
       - python3 setup.py install --prefix=/app --root=/
     sources:
-      - url: https://files.pythonhosted.org/packages/1f/d3/553847428391192ea7a2ab8f24be3b42071d515bca7be78ad094f53160c6/pikepdf-4.3.1.tar.gz
-        sha256: 8836e6060534c7245c8d736e93600667b928c767a012a73bb567f56bbe3d985c
+      - url: https://files.pythonhosted.org/packages/b4/a5/6487992141abc6133a1c59ca7389d761177f156b00364b79199d1c3307c0/pikepdf-4.4.1.tar.gz
+        sha256: c25d4c7673f9588d1f98bca498db98ba675070dc89ffffe50b3b124d4a005df9
         type: archive
         x-checker-data:
           type: pypi

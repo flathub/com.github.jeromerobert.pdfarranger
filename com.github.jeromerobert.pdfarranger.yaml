@@ -65,8 +65,8 @@ modules:
       - python3-pikepdf-deps.json
       - name: qpdf
         sources:
-          - url: https://github.com/qpdf/qpdf/releases/download/release-qpdf-10.5.0/qpdf-10.5.0.tar.gz
-            sha256: 88257d36a44fd5c50b2879488324dd9cafc11686ae49d8c4922a4872203ce006
+          - url: https://github.com/qpdf/qpdf/releases/download/release-qpdf-10.6.1/qpdf-10.6.1.tar.gz
+            sha256: 4c56328e1eeedea3d87eb79e1fe09374a923fe28756f7a56bcff58523617f05f
             type: archive
             x-checker-data:
               type: anitya

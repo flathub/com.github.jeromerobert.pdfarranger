@@ -12,8 +12,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/b0/43/3e286c93b9fa20e233d53532cc419b5aad8a468d91065dbef4c846058834/Pillow-9.0.0.tar.gz",
-                    "sha256": "ee6e2963e92762923956fe5d3479b1fdc3b76c83f290aad131a2f98c3df0593e"
+                    "url": "https://files.pythonhosted.org/packages/03/a3/f61a9a7ff7969cdef2a6e0383a346eb327495d20d25a2de5a088dbb543a6/Pillow-9.0.1.tar.gz",
+                    "sha256": "6c8bc8238a7dfdaf7a75f5ec5a663f4173f8c367e5a39f87e720495e1eed75fa"
                 }
             ]
         },
@@ -26,8 +26,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/70/1e/c7995fc7a0b0ec24bdb20b38f738e4f242250842717efa869e3fc4ce22fe/pybind11-2.9.0-py2.py3-none-any.whl",
-                    "sha256": "0c178c6e5806e8e58a7eec5a363d052bb9dac860a3ff64fbddb7226110644977"
+                    "url": "https://files.pythonhosted.org/packages/11/88/98f65ae2e34cb52cda4ce16fd0839d482fbb5b690cb2f8b93d24aaa018fa/pybind11-2.9.1-py2.py3-none-any.whl",
+                    "sha256": "b570d17ed34b0f8ff43f5647833db87353be9afca0c7d1d69e92706b10a9c961"
                 }
             ]
         },
@@ -54,8 +54,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/e2/9f/5e1557a57a7282f066351086e78f87289a3446c47b2cb5b8b2f614d8fe99/tomli-2.0.0-py3-none-any.whl",
-                    "sha256": "b5bde28da1fed24b9bd1d4d2b8cba62300bfb4ec9a6187a957e8ddb9434c5224"
+                    "url": "https://files.pythonhosted.org/packages/97/75/10a9ebee3fd790d20926a90a2547f0bf78f371b2f13aa822c759680ca7b9/tomli-2.0.1-py3-none-any.whl",
+                    "sha256": "939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc"
                 },
                 {
                     "type": "file",

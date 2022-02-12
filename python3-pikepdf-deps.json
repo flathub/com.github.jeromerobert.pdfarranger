@@ -34,7 +34,8 @@
                     "sha256": "b570d17ed34b0f8ff43f5647833db87353be9afca0c7d1d69e92706b10a9c961",
                     "x-checker-data": {
                         "type": "pypi",
-                        "name": "pybind11"
+                        "name": "pybind11",
+                        "packagetype": "bdist_wheel"
                     }
                 }
             ]
@@ -52,7 +53,8 @@
                     "sha256": "3df19d1f05f70bb4b33485a88669726f1b2f14600ef2e557b927fc9cbdbfff2b",
                     "x-checker-data": {
                         "type": "pypi",
-                        "name": "setuptools_scm_git_archive"
+                        "name": "setuptools_scm_git_archive",
+                        "packagetype": "bdist_wheel"
                     }
                 }
             ]
@@ -70,7 +72,8 @@
                     "sha256": "939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc",
                     "x-checker-data": {
                         "type": "pypi",
-                        "name": "tomli"
+                        "name": "tomli",
+                        "packagetype": "bdist_wheel"
                     }
                 },
                 {
@@ -79,7 +82,8 @@
                     "sha256": "a6c06a88f252e6c322f65faf8f418b16213b51bdfaece0524c1c1bc30c63c484",
                     "x-checker-data": {
                         "type": "pypi",
-                        "name": "pyparsing"
+                        "name": "pyparsing",
+                        "packagetype": "bdist_wheel"
                     }
                 },
                 {
@@ -88,7 +92,8 @@
                     "sha256": "ef103e05f519cdc783ae24ea4e2e0f508a9c99b2d4969652eed6a2e1ea5bd522",
                     "x-checker-data": {
                         "type": "pypi",
-                        "name": "packaging"
+                        "name": "packaging",
+                        "packagetype": "bdist_wheel"
                     }
                 },
                 {
@@ -97,7 +102,8 @@
                     "sha256": "acea13255093849de7ccb11af9e1fb8bde7067783450cee9ef7a93139bddf6d4",
                     "x-checker-data": {
                         "type": "pypi",
-                        "name": "setuptools_scm"
+                        "name": "setuptools_scm",
+                        "packagetype": "bdist_wheel"
                     }
                 }
             ]

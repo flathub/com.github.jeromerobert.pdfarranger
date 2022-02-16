@@ -53,8 +53,8 @@ modules:
     build-commands:
       - python3 setup.py install --prefix=/app --root=/
     sources:
-      - url: https://files.pythonhosted.org/packages/b4/a5/6487992141abc6133a1c59ca7389d761177f156b00364b79199d1c3307c0/pikepdf-4.4.1.tar.gz
-        sha256: c25d4c7673f9588d1f98bca498db98ba675070dc89ffffe50b3b124d4a005df9
+      - url: https://files.pythonhosted.org/packages/aa/33/75f609777e5cf27f255092d903a3401a088b725d853d976b7c523a02a7ef/pikepdf-4.5.0.tar.gz
+        sha256: 476d567999f6ed2c83c7e62f59fe819e9b1a1671bfbc6694d24b64b88ac3c1d0
         type: archive
         x-checker-data:
           type: pypi
@@ -65,8 +65,8 @@ modules:
       - python3-pikepdf-deps.json
       - name: qpdf
         sources:
-          - url: https://github.com/qpdf/qpdf/releases/download/release-qpdf-10.6.1/qpdf-10.6.1.tar.gz
-            sha256: 4c56328e1eeedea3d87eb79e1fe09374a923fe28756f7a56bcff58523617f05f
+          - url: https://github.com/qpdf/qpdf/releases/download/release-qpdf-10.6.2/qpdf-10.6.2.tar.gz
+            sha256: 4b8c966300fcef32352f6576b7ef40167e080e43fe8954b12ef80b49a7e5307f
             type: archive
             x-checker-data:
               type: anitya

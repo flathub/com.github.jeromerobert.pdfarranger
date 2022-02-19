@@ -1,6 +1,16 @@
-Python dependencies
-===================
+PDF Arranger Flatpak
+====================
 
-Just run the script `update-python-modules.sh`. It expect
-flatpak-builder-tools to be checked out in the Flathub check (this
-directory) or symlinked. You can modify the script too.
+This is the source repository for PDF Arranger's flatpak version.
+
+You may want to proceed to:
+
+- [PDF Arranger on Flathub](https://flathub.org/apps/details/com.github.jeromerobert.pdfarranger)
+- [PDF Arranger's main repository on Github](https://github.com/pdfarranger/pdfarranger)
+
+Python dependencies
+-------------------
+
+Just run the script `update-python-modules.sh`. It expects
+flatpak-builder-tools to be checked out in this
+directory or symlinked.

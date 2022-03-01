@@ -21,8 +21,8 @@ modules:
       - -DENABLE_QT5=OFF
       - -DENABLE_BOOST=OFF
     sources:
-      - url: https://poppler.freedesktop.org/poppler-22.02.0.tar.xz
-        sha256: e390c8b806f6c9f0e35c8462033e0a738bb2460ebd660bdb8b6dca01556193e1
+      - url: https://poppler.freedesktop.org/poppler-22.03.0.tar.xz
+        sha256: 728c78ba94d75a55f6b6355d4fbdaa6f49934d9616be58e5e679a9cfd0980e1e
         type: archive
         x-checker-data:
           type: anitya

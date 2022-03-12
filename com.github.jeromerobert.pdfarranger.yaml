@@ -21,8 +21,8 @@ modules:
       - -DENABLE_QT5=OFF
       - -DENABLE_BOOST=OFF
     sources:
-      - url: https://poppler.freedesktop.org/poppler-22.02.0.tar.xz
-        sha256: e390c8b806f6c9f0e35c8462033e0a738bb2460ebd660bdb8b6dca01556193e1
+      - url: https://poppler.freedesktop.org/poppler-22.03.0.tar.xz
+        sha256: 728c78ba94d75a55f6b6355d4fbdaa6f49934d9616be58e5e679a9cfd0980e1e
         type: archive
         x-checker-data:
           type: anitya
@@ -65,8 +65,8 @@ modules:
       - python3-pikepdf-deps.json
       - name: qpdf
         sources:
-          - url: https://github.com/qpdf/qpdf/releases/download/release-qpdf-10.6.2/qpdf-10.6.2.tar.gz
-            sha256: 4b8c966300fcef32352f6576b7ef40167e080e43fe8954b12ef80b49a7e5307f
+          - url: https://github.com/qpdf/qpdf/releases/download/release-qpdf-10.6.3/qpdf-10.6.3.tar.gz
+            sha256: e8fc23b2a584ea68c963a897515d3eb3129186741dd19d13c86d31fa33493811
             type: archive
             x-checker-data:
               type: anitya

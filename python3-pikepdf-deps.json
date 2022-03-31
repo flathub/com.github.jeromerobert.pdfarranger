@@ -30,8 +30,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/11/88/98f65ae2e34cb52cda4ce16fd0839d482fbb5b690cb2f8b93d24aaa018fa/pybind11-2.9.1-py2.py3-none-any.whl",
-                    "sha256": "b570d17ed34b0f8ff43f5647833db87353be9afca0c7d1d69e92706b10a9c961",
+                    "url": "https://files.pythonhosted.org/packages/fd/24/efc9e62aa1baa48622028c59ae2c70fa134801e8acbdf30e5b594fe5a360/pybind11-2.9.2-py2.py3-none-any.whl",
+                    "sha256": "20f56674da31c96bca7569b91e60f2bd30d693f0728541412ec927574f7bc9df",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "pybind11",

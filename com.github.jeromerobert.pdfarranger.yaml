@@ -53,8 +53,8 @@ modules:
     build-commands:
       - python3 setup.py install --prefix=/app --root=/
     sources:
-      - url: https://files.pythonhosted.org/packages/b5/b7/b1ae6cb14af447e3b7401d03a035192d97e1ef42838c717b10b32d7d52a0/pikepdf-5.1.1.tar.gz
-        sha256: 710535c679ab0d7b8249f72247832773e7a9a121dfbe9cad7f6465bd9bb45fae
+      - url: https://files.pythonhosted.org/packages/16/6e/6bf0394988167e39ce152c0d44949f2ff4fe040ceef8fdd9ef63971f337e/pikepdf-5.1.2.tar.gz
+        sha256: dfa89bd86e01413531c1d7d201fb01f0e62b52ea926a8e8ca6f99f86ed761e95
         type: archive
         x-checker-data:
           type: pypi

@@ -1,6 +1,6 @@
 id: com.github.jeromerobert.pdfarranger
 runtime: org.gnome.Platform
-runtime-version: '41'
+runtime-version: '42'
 sdk: org.gnome.Sdk
 command: pdfarranger
 

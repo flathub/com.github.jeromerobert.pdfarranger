@@ -49,8 +49,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/7e/83/284c6d3fac2e74532a9f51f908018690709db9af1469cf728574f6be3abf/setuptools_scm_git_archive-1.1-py2.py3-none-any.whl",
-                    "sha256": "3df19d1f05f70bb4b33485a88669726f1b2f14600ef2e557b927fc9cbdbfff2b",
+                    "url": "https://files.pythonhosted.org/packages/12/56/d89477079d7956e165c3a6dc11d26073b4499bac382299441d4fae8f3fd8/setuptools_scm_git_archive-1.2-py2.py3-none-any.whl",
+                    "sha256": "8cb0e46e3f8dbc1882fbb0f118884af53c79e75bfb26ec950a55e7237a57d5e1",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "setuptools_scm_git_archive",
@@ -98,8 +98,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/e3/e5/c28b544051340e63e0d507eb893c9513d3a300e5e9183e2990518acbfe36/setuptools_scm-6.4.2-py3-none-any.whl",
-                    "sha256": "acea13255093849de7ccb11af9e1fb8bde7067783450cee9ef7a93139bddf6d4",
+                    "url": "https://files.pythonhosted.org/packages/3e/d1/2cc67e493d5d6e17ff64492065cfb02d4186feff7b507fe065071506bf59/setuptools_scm-7.0.1-py3-none-any.whl",
+                    "sha256": "23b2e561fd3db49d168f282384af4730092a8c8c6db6d3451ce93a5813c14509",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "setuptools_scm",

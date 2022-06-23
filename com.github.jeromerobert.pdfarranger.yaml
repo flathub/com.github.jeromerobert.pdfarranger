@@ -51,7 +51,7 @@ modules:
       env:
         SETUPTOOLS_USE_DISTUTILS: stdlib
     build-commands:
-      - python3 setup.py install --prefix=/app --root=/
+      - python3 setup.py install --prefix=${FLATPAK_DEST}
     sources:
       - url: https://files.pythonhosted.org/packages/6a/4b/5f456ff997f66e4ec6eb53b32c3db2b9fd03889e9768619cc3d6e5ed767f/pikepdf-5.1.5.tar.gz
         sha256: 0af747f989d0de8302e6e58e3da4c38d230bad6138b1cbb8dc6838e16285e63f

@@ -49,8 +49,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/12/56/d89477079d7956e165c3a6dc11d26073b4499bac382299441d4fae8f3fd8/setuptools_scm_git_archive-1.2-py2.py3-none-any.whl",
-                    "sha256": "8cb0e46e3f8dbc1882fbb0f118884af53c79e75bfb26ec950a55e7237a57d5e1",
+                    "url": "https://files.pythonhosted.org/packages/3d/4a/b3f1758582165640fa317ca0b7fcd86870ea17c52aa46b00e9ff271be92d/setuptools_scm_git_archive-1.2.3-py2.py3-none-any.whl",
+                    "sha256": "0d41de302f890a8165b5559099c31b0cd408b61b68944ca8e1736c52c5224709",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "setuptools_scm_git_archive",

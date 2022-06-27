@@ -50,12 +50,6 @@ modules:
     build-options:
       env:
         SETUPTOOLS_USE_DISTUTILS: stdlib
-
-        # Workaround for regression in setuptools_scm 7.x
-        # https://github.com/pypa/setuptools_scm/issues/727
-        # The exact version is not relevant as long as it is > 1.17
-        SETUPTOOLS_SCM_PRETEND_VERSION_FOR_PIKEPDF: 5.1.5
-
     build-commands:
       - python3 setup.py install --prefix=${FLATPAK_DEST}
     sources:

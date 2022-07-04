@@ -21,8 +21,8 @@ modules:
       - -DENABLE_QT5=OFF
       - -DENABLE_BOOST=OFF
     sources:
-      - url: https://poppler.freedesktop.org/poppler-22.06.0.tar.xz
-        sha256: a0f9aaa3918bad781039fc307a635652a14d1b391cd559b66edec4bedba3c5d7
+      - url: https://poppler.freedesktop.org/poppler-22.07.0.tar.xz
+        sha256: 420230c5c43782e2151259b3e523e632f4861342aad70e7e20b8773d9eaf3428
         type: archive
         x-checker-data:
           type: anitya
@@ -53,8 +53,8 @@ modules:
     build-commands:
       - python3 setup.py install --prefix=${FLATPAK_DEST}
     sources:
-      - url: https://files.pythonhosted.org/packages/74/11/1551df95a3303f67c496b2596170a9524fa9036eab7365aa4928bec701ab/pikepdf-5.2.0.tar.gz
-        sha256: 092846e2b01b04e2bd0d208fd59ccc010941e70fc4aca2968b5cb3fbcc2e686d
+      - url: https://files.pythonhosted.org/packages/9f/27/9cebb79c39a38c7f8de029280394a6cb601770a1cdccab7f31a78fc12642/pikepdf-5.3.0.tar.gz
+        sha256: 08d1d2f6a5ff20c731d26ad36e3b953cac20aa280176cec9104c47d02d6093c9
         type: archive
         x-checker-data:
           type: pypi

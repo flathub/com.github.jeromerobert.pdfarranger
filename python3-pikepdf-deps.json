@@ -68,6 +68,16 @@
             "sources": [
                 {
                     "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/6c/10/a7d0fa5baea8fe7b50f448ab742f26f52b80bfca85ac2be9d35cdd9a3246/pyparsing-3.0.9-py3-none-any.whl",
+                    "sha256": "5026bae9a10eeaefb61dab2f09052b9f4307d44aee4eda64b309723d8d206bbc",
+                    "x-checker-data": {
+                        "type": "pypi",
+                        "name": "pyparsing",
+                        "packagetype": "bdist_wheel"
+                    }
+                },
+                {
+                    "type": "file",
                     "url": "https://files.pythonhosted.org/packages/ed/d6/2afc375a8d55b8be879d6b4986d4f69f01115e795e36827fd3a40166028b/typing_extensions-4.3.0-py3-none-any.whl",
                     "sha256": "25642c956049920a5aa49edcdd6ab1e06d7e5d467fc00e0506c44ac86fbfca02",
                     "x-checker-data": {
@@ -83,16 +93,6 @@
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "tomli",
-                        "packagetype": "bdist_wheel"
-                    }
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/6c/10/a7d0fa5baea8fe7b50f448ab742f26f52b80bfca85ac2be9d35cdd9a3246/pyparsing-3.0.9-py3-none-any.whl",
-                    "sha256": "5026bae9a10eeaefb61dab2f09052b9f4307d44aee4eda64b309723d8d206bbc",
-                    "x-checker-data": {
-                        "type": "pypi",
-                        "name": "pyparsing",
                         "packagetype": "bdist_wheel"
                     }
                 },

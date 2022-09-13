@@ -10,4 +10,4 @@ $PIP_GENERATOR lxml
 sed -e 's/--no-build-isolation/--no-build-isolation --ignore-installed/g' -i python3-lxml.json
 
 $PIP_GENERATOR python-dateutil
-$PIP_GENERATOR pillow pybind11 setuptools-scm-git-archive setuptools-scm deprecation --output=python3-pikepdf-deps
+$PIP_GENERATOR pillow pybind11 setuptools-scm deprecation --output=python3-pikepdf-deps

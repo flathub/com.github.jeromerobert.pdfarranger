@@ -41,25 +41,6 @@
             ]
         },
         {
-            "name": "python3-setuptools-scm-git-archive",
-            "buildsystem": "simple",
-            "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"setuptools-scm-git-archive\" --no-build-isolation"
-            ],
-            "sources": [
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/3f/35/7189a677393f32555d3574d131894b824ce277bd79e8e2bb3713e4c08c10/setuptools_scm_git_archive-1.4-py2.py3-none-any.whl",
-                    "sha256": "600cd90b420bec4802ce3843d5b52c9dc618fc7d9826e245f8d6f091c5944279",
-                    "x-checker-data": {
-                        "type": "pypi",
-                        "name": "setuptools_scm_git_archive",
-                        "packagetype": "bdist_wheel"
-                    }
-                }
-            ]
-        },
-        {
             "name": "python3-setuptools-scm",
             "buildsystem": "simple",
             "build-commands": [

@@ -53,8 +53,8 @@ modules:
     build-commands:
       - python3 setup.py install --prefix=${FLATPAK_DEST}
     sources:
-      - url: https://files.pythonhosted.org/packages/52/1e/0b782b5de445e302434019da2eccb33f57eb27c771ea1dc53dd60bdaef67/pikepdf-5.6.1.tar.gz
-        sha256: 03fb70ff4fada9cba864d04033f4166b5bf7fa85c90cdc05afd0ab87c9ccaa1a
+      - url: https://files.pythonhosted.org/packages/c7/b2/f2fb8157a75248d6995576ea72514da185d15e6fe945b326ee4c548ea24e/pikepdf-6.0.1.tar.gz
+        sha256: 519a017282780ad2d547cd848407ab03b2cb12ee467b71e51f53ca7f4f3146ea
         type: archive
         x-checker-data:
           type: pypi
@@ -65,8 +65,8 @@ modules:
       - python3-pikepdf-deps.json
       - name: qpdf
         sources:
-          - url: https://github.com/qpdf/qpdf/releases/download/release-qpdf-10.6.3/qpdf-10.6.3.tar.gz
-            sha256: e8fc23b2a584ea68c963a897515d3eb3129186741dd19d13c86d31fa33493811
+          - url: https://github.com/qpdf/qpdf/releases/download/v11.1.0/qpdf-11.1.0.tar.gz
+            sha256: 34a7cf3ac6e239510e9a20d7cbe10a4aff0f572c20e0a9bed0badb820a69e22d
             type: archive
             x-checker-data:
               type: anitya
@@ -95,8 +95,8 @@ modules:
         .
     sources:
       - url: https://github.com/pdfarranger/pdfarranger
-        commit: 68452f96aacf5a3d07a52ab49c571924718752d3
-        tag: 1.8.2
+        commit: 815c9e6c008e1afa59ffbdf79eaeb27a52c96d79
+        tag: 1.9.0
         type: git
         x-checker-data:
           type: git

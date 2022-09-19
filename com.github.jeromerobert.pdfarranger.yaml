@@ -53,8 +53,8 @@ modules:
     build-commands:
       - python3 setup.py install --prefix=${FLATPAK_DEST}
     sources:
-      - url: https://files.pythonhosted.org/packages/52/1e/0b782b5de445e302434019da2eccb33f57eb27c771ea1dc53dd60bdaef67/pikepdf-5.6.1.tar.gz
-        sha256: 03fb70ff4fada9cba864d04033f4166b5bf7fa85c90cdc05afd0ab87c9ccaa1a
+      - url: https://files.pythonhosted.org/packages/4a/0b/29c9d91186861472a6594083a4da2683febab57ada2b62c414f5d7cbefcf/pikepdf-6.0.2.tar.gz
+        sha256: eab4823438a95b849699de02cb8780d4853b0c9de89548dd1ff4e3327371d7d4
         type: archive
         x-checker-data:
           type: pypi
@@ -67,8 +67,8 @@ modules:
       - python3-pikepdf-deps.json
       - name: qpdf
         sources:
-          - url: https://github.com/qpdf/qpdf/releases/download/release-qpdf-10.6.3/qpdf-10.6.3.tar.gz
-            sha256: e8fc23b2a584ea68c963a897515d3eb3129186741dd19d13c86d31fa33493811
+          - url: https://github.com/qpdf/qpdf/releases/download/v11.1.0/qpdf-11.1.0.tar.gz
+            sha256: 34a7cf3ac6e239510e9a20d7cbe10a4aff0f572c20e0a9bed0badb820a69e22d
             type: archive
             x-checker-data:
               type: anitya

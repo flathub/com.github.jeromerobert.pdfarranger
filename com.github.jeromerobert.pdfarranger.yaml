@@ -59,8 +59,6 @@ modules:
         x-checker-data:
           type: pypi
           name: pikepdf
-          versions:
-            - <: 6
 
     modules:
       - python3-lxml.json
@@ -77,8 +75,6 @@ modules:
               project-id: 5542
               stable-only: true
               url-template: https://github.com/qpdf/qpdf/releases/download/v$version/qpdf-$version.tar.gz
-              versions:
-                - <: 11
 
   - name: image2pdf
     buildsystem: simple

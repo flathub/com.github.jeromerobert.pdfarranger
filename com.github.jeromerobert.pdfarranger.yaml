@@ -99,8 +99,8 @@ modules:
         .
     sources:
       - url: https://github.com/pdfarranger/pdfarranger
-        commit: 815c9e6c008e1afa59ffbdf79eaeb27a52c96d79
-        tag: 1.9.0
+        commit: 3035a0ef2805c68ca58f3bddd30279e9fdc8d2e5
+        tag: 1.9.1
         type: git
         x-checker-data:
           type: git

@@ -53,8 +53,8 @@ modules:
     build-commands:
       - python3 setup.py install --prefix=${FLATPAK_DEST}
     sources:
-      - url: https://files.pythonhosted.org/packages/4a/0b/29c9d91186861472a6594083a4da2683febab57ada2b62c414f5d7cbefcf/pikepdf-6.0.2.tar.gz
-        sha256: eab4823438a95b849699de02cb8780d4853b0c9de89548dd1ff4e3327371d7d4
+      - url: https://files.pythonhosted.org/packages/a2/e7/e52fe97fff88d002d054b4e31198d1e5de52b33508e594fa2dc2d067510d/pikepdf-6.1.0.tar.gz
+        sha256: d140fa7c6ef4b8c91fa1ee360628110cd3e636d0f85717da22f2d772d509a3ed
         type: archive
         x-checker-data:
           type: pypi

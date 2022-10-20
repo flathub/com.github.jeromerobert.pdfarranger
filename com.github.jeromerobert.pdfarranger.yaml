@@ -47,11 +47,9 @@ modules:
 
   - name: pikepdf-src
     buildsystem: simple
-    build-options:
-      env:
-        SETUPTOOLS_USE_DISTUTILS: stdlib
     build-commands:
-      - python3 setup.py install --prefix=${FLATPAK_DEST}
+      - pip3 install --no-index --prefix=${FLATPAK_DEST} --no-build-isolation
+        .
     sources:
       - url: https://files.pythonhosted.org/packages/9b/06/7dc76c7db56cd500f304ff71a2deae24417d2f9bbd4f0948714a6a2504d4/pikepdf-6.2.1.tar.gz
         sha256: 28309830b84e1392949afe5dc8e02d635531b63ab41f0ed6ec05ca8a8cc384ee

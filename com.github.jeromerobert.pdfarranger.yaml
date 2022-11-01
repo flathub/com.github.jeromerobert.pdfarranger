@@ -21,8 +21,8 @@ modules:
       - -DENABLE_QT5=OFF
       - -DENABLE_BOOST=OFF
     sources:
-      - url: https://poppler.freedesktop.org/poppler-22.10.0.tar.xz
-        sha256: 04e40fad924a6de62e63017a6fd4c04696c1f526dedc2ba5ef275cedf646292a
+      - url: https://poppler.freedesktop.org/poppler-22.11.0.tar.xz
+        sha256: 093ba9844ed774285517361c15e21a31ba4df278a499263d4403cca74f2da828
         type: archive
         x-checker-data:
           type: anitya
@@ -48,8 +48,7 @@ modules:
   - name: pikepdf-src
     buildsystem: simple
     build-commands:
-      - pip3 install --no-index --prefix=${FLATPAK_DEST} --no-build-isolation
-        .
+      - pip3 install --no-index --prefix=${FLATPAK_DEST} --no-build-isolation .
     sources:
       - url: https://files.pythonhosted.org/packages/9b/06/7dc76c7db56cd500f304ff71a2deae24417d2f9bbd4f0948714a6a2504d4/pikepdf-6.2.1.tar.gz
         sha256: 28309830b84e1392949afe5dc8e02d635531b63ab41f0ed6ec05ca8a8cc384ee

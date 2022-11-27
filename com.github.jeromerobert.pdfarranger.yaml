@@ -64,8 +64,8 @@ modules:
         buildsystem: cmake-ninja
         builddir: true
         sources:
-          - url: https://github.com/qpdf/qpdf/releases/download/v11.1.1/qpdf-11.1.1.tar.gz
-            sha256: 25e8ec60e290cd134405a51920015b6d351d4e0b93b7b736d257f10725f74b5a
+          - url: https://github.com/qpdf/qpdf/releases/download/v11.2.0/qpdf-11.2.0.tar.gz
+            sha256: fbd2d75050933487929dbbe1b5c50a238487194bc7263c277d6e49abb90ab7f2
             type: archive
             x-checker-data:
               type: anitya
@@ -94,8 +94,8 @@ modules:
         .
     sources:
       - url: https://github.com/pdfarranger/pdfarranger
-        commit: 3035a0ef2805c68ca58f3bddd30279e9fdc8d2e5
-        tag: 1.9.1
+        commit: 9c1c97a100db885672f4dfa724027c5804b7aa70
+        tag: 1.9.2
         type: git
         x-checker-data:
           type: git

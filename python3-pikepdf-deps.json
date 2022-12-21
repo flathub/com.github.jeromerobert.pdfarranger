@@ -30,8 +30,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/1d/53/e6b27f3596278f9dd1d28ef1ddb344fd0cd5db98ef2179d69a2044e11897/pybind11-2.10.1-py3-none-any.whl",
-                    "sha256": "ebf3eeac46859a2e10077ae45378ba3f33d999a9064697a3464fba1a4a04fc0a",
+                    "url": "https://files.pythonhosted.org/packages/fd/46/092d59dca8fb4a64592ba2752ae5688b9ea7591b924292d06db9cc5212a8/pybind11-2.10.2-py3-none-any.whl",
+                    "sha256": "51507b4bcb2ce078fcc548e5ba46e9461f9706333fb75ad4ec6ee3ac375a6766",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "pybind11",
@@ -69,8 +69,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/01/ed/75a20e7b075e8ecb1f84e8debf833917905d8790b78008915bd68dddd5c4/setuptools_scm-7.0.5-py3-none-any.whl",
-                    "sha256": "7930f720905e03ccd1e1d821db521bff7ec2ac9cf0ceb6552dd73d24a45d3b02",
+                    "url": "https://files.pythonhosted.org/packages/1d/66/8f42c941be949ef2b22fe905d850c794e7c170a526023612aad5f3a121ad/setuptools_scm-7.1.0-py3-none-any.whl",
+                    "sha256": "73988b6d848709e2af142aa48c986ea29592bbcfca5375678064708205253d8e",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "setuptools_scm",

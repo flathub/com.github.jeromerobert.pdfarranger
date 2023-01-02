@@ -59,16 +59,6 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/6c/10/a7d0fa5baea8fe7b50f448ab742f26f52b80bfca85ac2be9d35cdd9a3246/pyparsing-3.0.9-py3-none-any.whl",
-                    "sha256": "5026bae9a10eeaefb61dab2f09052b9f4307d44aee4eda64b309723d8d206bbc",
-                    "x-checker-data": {
-                        "type": "pypi",
-                        "name": "pyparsing",
-                        "packagetype": "bdist_wheel"
-                    }
-                },
-                {
-                    "type": "file",
                     "url": "https://files.pythonhosted.org/packages/1d/66/8f42c941be949ef2b22fe905d850c794e7c170a526023612aad5f3a121ad/setuptools_scm-7.1.0-py3-none-any.whl",
                     "sha256": "73988b6d848709e2af142aa48c986ea29592bbcfca5375678064708205253d8e",
                     "x-checker-data": {
@@ -123,16 +113,6 @@
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "packaging",
-                        "packagetype": "bdist_wheel"
-                    }
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/6c/10/a7d0fa5baea8fe7b50f448ab742f26f52b80bfca85ac2be9d35cdd9a3246/pyparsing-3.0.9-py3-none-any.whl",
-                    "sha256": "5026bae9a10eeaefb61dab2f09052b9f4307d44aee4eda64b309723d8d206bbc",
-                    "x-checker-data": {
-                        "type": "pypi",
-                        "name": "pyparsing",
                         "packagetype": "bdist_wheel"
                     }
                 }

@@ -1,0 +1,27 @@
+name: Run script to genereate python dependencies
+on: 
+  push:
+
+jobs:
+  Run-update-python-modules.sh:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        persist-credentials: false # for create-or-update-pull-request-action
+    - name: Install dependencies
+      run: pip3 install requirements-parser
+    - name: Run update-python-modules.sh
+      run: ./update-python-modules.sh
+
+    - name: Create or Update Pull Request
+      uses: gr2m/create-or-update-pull-request-action@v1.5.1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        title: Update Python dependencies
+        body: Automatic PR by GHA
+        commit-message: Regenerate Python dependencies
+        assignees: dreua
+
+

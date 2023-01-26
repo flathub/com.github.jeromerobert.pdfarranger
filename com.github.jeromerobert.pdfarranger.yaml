@@ -50,8 +50,8 @@ modules:
     build-commands:
       - pip3 install --no-index --prefix=${FLATPAK_DEST} --no-build-isolation .
     sources:
-      - url: https://files.pythonhosted.org/packages/8d/c7/908cab0c3e271bd2e0a8769673a13b61b59c7f70fe41dfe86e4f59cecb2d/pikepdf-6.2.8.post1.tar.gz
-        sha256: 5423ee3f35b60b27cbd16ec973d9947e885c7f62561f53b9bf97af7026df12e2
+      - url: https://files.pythonhosted.org/packages/aa/f9/d91dd6155b979ddf4bd8de2f36e21b53b0b193c31d203da6e476335b3859/pikepdf-6.2.9.tar.gz
+        sha256: 63aaa186438a6613ffc6a841401e14d42aa0e36ddcfba31d12f8648495eb01ae
         type: archive
         x-checker-data:
           type: pypi

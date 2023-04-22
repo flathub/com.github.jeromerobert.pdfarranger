@@ -1,4 +1,4 @@
-# Generated with flatpak-pip-generator --checker-data --yaml python-dateutil
+# Generated with flatpak-pip-generator --checker-data --yaml --runtime=org.gnome.Sdk//44 python-dateutil
 name: python3-python-dateutil
 buildsystem: simple
 build-commands:

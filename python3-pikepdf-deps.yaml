@@ -1,4 +1,4 @@
-# Generated with flatpak-pip-generator --checker-data --yaml pillow pybind11 setuptools-scm deprecation --output=python3-pikepdf-deps
+# Generated with flatpak-pip-generator --checker-data --yaml --runtime=org.gnome.Sdk//44 pillow pybind11 setuptools-scm deprecation --output=python3-pikepdf-deps
 build-commands: []
 buildsystem: simple
 modules:
@@ -46,6 +46,13 @@ modules:
         sha256: 73988b6d848709e2af142aa48c986ea29592bbcfca5375678064708205253d8e
         x-checker-data:
           name: setuptools_scm
+          packagetype: bdist_wheel
+          type: pypi
+      - type: file
+        url: https://files.pythonhosted.org/packages/97/75/10a9ebee3fd790d20926a90a2547f0bf78f371b2f13aa822c759680ca7b9/tomli-2.0.1-py3-none-any.whl
+        sha256: 939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc
+        x-checker-data:
+          name: tomli
           packagetype: bdist_wheel
           type: pypi
       - type: file

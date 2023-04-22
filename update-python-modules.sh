@@ -3,7 +3,7 @@
 # Workaround for pip's keyring bug
 export PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring
 
-PIP_GENERATOR="flatpak-builder-tools/pip/flatpak-pip-generator --checker-data --yaml"
+PIP_GENERATOR="flatpak-builder-tools/pip/flatpak-pip-generator --checker-data --yaml --runtime=org.gnome.Sdk//44"
 
 $PIP_GENERATOR lxml
 # lxml must be force installed as it is in the GMOME 41 sdk but not the platform.

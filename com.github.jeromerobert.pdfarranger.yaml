@@ -58,8 +58,8 @@ modules:
           name: pikepdf
 
     modules:
-      - python3-lxml.json
-      - python3-pikepdf-deps.json
+      - python3-lxml.yaml
+      - python3-pikepdf-deps.yaml
       - name: qpdf
         buildsystem: cmake-ninja
         builddir: true
@@ -86,7 +86,7 @@ modules:
           type: pypi
           name: img2pdf
 
-  - python3-python-dateutil.json
+  - python3-python-dateutil.yaml
   - name: pdfarranger
     buildsystem: simple
     build-commands:

@@ -1,4 +1,4 @@
-# Generated with flatpak-pip-generator --checker-data --yaml lxml
+# Generated with flatpak-pip-generator --checker-data --yaml --runtime=org.gnome.Sdk//44 lxml
 name: python3-lxml
 buildsystem: simple
 build-commands:

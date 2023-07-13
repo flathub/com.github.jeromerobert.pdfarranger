@@ -7,6 +7,9 @@ runtime-version: '44'
 sdk: org.gnome.Sdk
 command: pdfarranger
 
+# We offer a language selection in the settings, therefore install all languages
+separate-locales: false
+
 finish-args:
   - --socket=wayland
   - --socket=fallback-x11

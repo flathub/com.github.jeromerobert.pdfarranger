@@ -1,7 +1,7 @@
 id: com.github.jeromerobert.pdfarranger
 runtime: org.gnome.Platform
 
-# Please also update 'update-python-modules.sh' when changing runtime-version
+# Please also update 'flatpak-module-qpdf-pikepdf/generate-pikepdf' when changing runtime-version
 runtime-version: '44'
 
 sdk: org.gnome.Sdk
@@ -17,6 +17,23 @@ finish-args:
   - --filesystem=host
 
 modules:
+  - flatpak-module-qpdf-pikepdf/pikepdf.yaml
+  - python3-python-dateutil.yaml
+
+  - name: image2pdf
+    buildsystem: simple
+    build-commands:
+      - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST}
+        img2pdf-*.tar.gz
+    sources:
+      # Depenedencies are satisfied through pikepdf installed earlier
+      - url: https://files.pythonhosted.org/packages/95/b5/f933f482a811fb9a7b3707f60e28f2925fed84726e5a6283ba07fdd54f49/img2pdf-0.4.4.tar.gz
+        sha256: 8ec898a9646523fd3862b154f3f47cd52609c24cc3e2dc1fb5f0168f0cbe793c
+        type: file
+        x-checker-data:
+          type: pypi
+          name: img2pdf
+
   - name: poppler
     buildsystem: cmake-ninja
     config-opts:
@@ -34,48 +51,6 @@ modules:
           stable-only: true
           url-template: https://poppler.freedesktop.org/poppler-$version.tar.xz
 
-  - name: pikepdf-src
-    buildsystem: simple
-    build-commands:
-      - pip3 install --no-index --prefix=${FLATPAK_DEST} --no-build-isolation .
-    sources:
-      - url: https://files.pythonhosted.org/packages/3a/1a/991822625d12f8bd8f5f614c7e368e3ed5daf4b5402d82ca2eaf3502e738/pikepdf-8.0.0.tar.gz
-        sha256: 17264250e73910b0c9a10e6097624c8714ac7136c00e799ade0361877b3ee3fa
-        type: archive
-        x-checker-data:
-          type: pypi
-          name: pikepdf
-
-    modules:
-      - python3-lxml.yaml
-      - python3-pikepdf-deps.yaml
-      - name: qpdf
-        buildsystem: cmake-ninja
-        builddir: true
-        sources:
-          - url: https://github.com/qpdf/qpdf/releases/download/v11.5.0/qpdf-11.5.0.tar.gz
-            sha256: 15cb419e72c494a4a4b2e7c0eb9f4e980c8fd4e61ccdea64399e987f4c56c8ee
-            type: archive
-            x-checker-data:
-              type: anitya
-              project-id: 5542
-              stable-only: true
-              url-template: https://github.com/qpdf/qpdf/releases/download/v$version/qpdf-$version.tar.gz
-
-  - name: image2pdf
-    buildsystem: simple
-    build-commands:
-      - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST}
-        img2pdf-*.tar.gz
-    sources:
-      - url: https://files.pythonhosted.org/packages/95/b5/f933f482a811fb9a7b3707f60e28f2925fed84726e5a6283ba07fdd54f49/img2pdf-0.4.4.tar.gz
-        sha256: 8ec898a9646523fd3862b154f3f47cd52609c24cc3e2dc1fb5f0168f0cbe793c
-        type: file
-        x-checker-data:
-          type: pypi
-          name: img2pdf
-
-  - python3-python-dateutil.yaml
   - name: pdfarranger
     buildsystem: simple
     build-commands:

@@ -4,3 +4,6 @@
 [submodule "flatpak-builder-tools"]
 	path = flatpak-builder-tools
 	url = https://github.com/flatpak/flatpak-builder-tools.git
+[submodule "flatpak-module-qpdf-pikepdf"]
+	path = flatpak-module-qpdf-pikepdf
+	url = git@github.com:dreua/flatpak-module-qpdf-pikepdf.git

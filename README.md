@@ -7,10 +7,4 @@ You may want to proceed to:
 
 - [PDF Arranger on Flathub](https://flathub.org/apps/details/com.github.jeromerobert.pdfarranger)
 - [PDF Arranger's main repository on Github](https://github.com/pdfarranger/pdfarranger)
-
-Python dependencies
--------------------
-
-Just run the script `update-python-modules.sh`. It expects
-flatpak-builder-tools to be checked out in this
-directory or symlinked.
+- [Flathub modules for pikepdf and qpdf](https://github.com/dreua/flatpak-module-qpdf-pikepdf)

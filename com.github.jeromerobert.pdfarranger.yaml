@@ -27,8 +27,8 @@ modules:
         img2pdf-*.tar.gz
     sources:
       # Depenedencies are satisfied through pikepdf installed earlier
-      - url: https://files.pythonhosted.org/packages/56/a4/755e7c296d6e24e3e40b0f98e639ee93be1bd91c62ed698bbc7ceec420f6/img2pdf-0.5.0.tar.gz
-        sha256: ae6c19731bde2551356c178bf356ca118ac32a232c737a14b423f8039df3c24b
+      - url: https://files.pythonhosted.org/packages/36/92/6ac4d61951ba507b499f674c90dfa7b48fa776b56f6f068507f8751c03f1/img2pdf-0.5.1.tar.gz
+        sha256: 73847e47242f4b5bd113c70049e03e03212936c2727cd2a8bf564229a67d0b95
         type: file
         x-checker-data:
           type: pypi

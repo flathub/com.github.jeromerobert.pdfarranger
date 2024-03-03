@@ -45,8 +45,8 @@ modules:
       - -DENABLE_QT8=OFF
       - -DENABLE_BOOST=OFF
     sources:
-      - url: https://poppler.freedesktop.org/poppler-24.01.0.tar.xz
-        sha256: c7def693a7a492830f49d497a80cc6b9c85cb57b15e9be2d2d615153b79cae08
+      - url: https://poppler.freedesktop.org/poppler-24.03.0.tar.xz
+        sha256: bafbf0db5713dec25b5d16eb2cd87e4a62351cdc40f050c3937cd8dd6882d446
         type: archive
         x-checker-data:
           type: anitya

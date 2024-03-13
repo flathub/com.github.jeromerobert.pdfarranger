@@ -26,7 +26,7 @@ modules:
       - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST}
         img2pdf-*.tar.gz
     sources:
-      # Depenedencies are satisfied through pikepdf installed earlier
+      # dependencies are satisfied through pikepdf installed earlier
       - url: https://files.pythonhosted.org/packages/36/92/6ac4d61951ba507b499f674c90dfa7b48fa776b56f6f068507f8751c03f1/img2pdf-0.5.1.tar.gz
         sha256: 73847e47242f4b5bd113c70049e03e03212936c2727cd2a8bf564229a67d0b95
         type: file

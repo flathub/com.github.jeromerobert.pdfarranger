@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.github.jeromerobert.pdfarranger</id>
+  
+  <name>PDF Arranger</name>
+  <summary>PDF Merging, Rearranging, Splitting, Rotating and Cropping</summary>
+  
+  <metadata_license>MIT</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  
+  <description>
+    <p>
+      PDF Arranger is a small application, which helps the user to merge or split pdf documents and rotate, crop and rearrange their pages using an interactive and intuitive graphical interface.
+    </p>
+    <p>
+      It is a frontend for pikepdf.
+    </p>
+  </description>
+  
+  <launchable type="desktop-id">com.github.jeromerobert.pdfarranger.desktop</launchable>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://github.com/pdfarranger/pdfarranger/blob/main/data/screenshot.png</image>
+    </screenshot>
+  </screenshots>
+</component>

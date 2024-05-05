@@ -4,6 +4,8 @@
   
   <name>PDF Arranger</name>
   <summary>PDF Merging, Rearranging, Splitting, Rotating and Cropping</summary>
+
+  <developer_name>PDF-Arranger developer team</developer_name>
   
   <metadata_license>MIT</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>

@@ -1,0 +1,12 @@
+diff --git a/data/com.github.jeromerobert.pdfarranger.metainfo.xml b/data/com.github.jeromerobert.pdfarranger.metainfo.xml
+index d48297b..79d6203 100644
+--- a/data/com.github.jeromerobert.pdfarranger.metainfo.xml
++++ b/data/com.github.jeromerobert.pdfarranger.metainfo.xml
+@@ -37,6 +37,7 @@ See file COPYING or go to <http://www.gnu.org/licenses/> for full license detail
+   <launchable type="desktop-id">com.github.jeromerobert.pdfarranger.desktop</launchable>
+   <metadata_license>CC0-1.0</metadata_license>
+   <content_rating type="oars-1.1"/>
++  <developer_name>PDF Arranger Developers</developer_name>
+   <categories>
+     <category>Office</category>
+   </categories>

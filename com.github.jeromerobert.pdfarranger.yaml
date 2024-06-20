@@ -67,8 +67,6 @@ modules:
         x-checker-data:
           type: git
           tag-pattern: ^([\d.]+)$
-      - type: patch
-        path: patches/pdfarranger-appstream.patch
 
 
 cleanup:

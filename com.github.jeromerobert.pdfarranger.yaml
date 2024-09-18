@@ -2,7 +2,7 @@ id: com.github.jeromerobert.pdfarranger
 runtime: org.gnome.Platform
 
 # Please also update 'flatpak-module-qpdf-pikepdf/generate-pikepdf' when changing runtime-version
-runtime-version: '45'
+runtime-version: '47'
 
 sdk: org.gnome.Sdk
 command: pdfarranger
@@ -67,7 +67,6 @@ modules:
         x-checker-data:
           type: git
           tag-pattern: ^([\d.]+)$
-
 
 cleanup:
   - /include

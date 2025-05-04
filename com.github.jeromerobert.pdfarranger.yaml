@@ -26,8 +26,8 @@ modules:
         img2pdf-*.tar.gz
     sources:
       # Depenedencies are satisfied through pikepdf installed earlier
-      - url: https://files.pythonhosted.org/packages/c2/62/c7402ffe11d43e88dbab6b7255f16743f8b9cbb3e7d3405f95a677a98c47/img2pdf-0.6.0.tar.gz
-        sha256: 85a89b8abdeef9ef033508aed0d9f1e84fd6d0130e864e2c523f948ec45365e1
+      - url: https://files.pythonhosted.org/packages/82/c3/023387e00682dc1b46bd719ec19c4c9206dc8eb182dfd02bc62c5b9320a2/img2pdf-0.6.1.tar.gz
+        sha256: 306e279eb832bc159d7d6294b697a9fbd11b4be1f799b14b3b2174fb506af289
         type: file
         x-checker-data:
           type: pypi
@@ -44,8 +44,8 @@ modules:
       - -DENABLE_QT8=OFF
       - -DENABLE_BOOST=OFF
     sources:
-      - url: https://poppler.freedesktop.org/poppler-25.04.0.tar.xz
-        sha256: b010c596dce127fba88532fd2f1043e55ea30601767952d0f2c0a80e7dc0da3d
+      - url: https://poppler.freedesktop.org/poppler-25.05.0.tar.xz
+        sha256: 9b1627c5b76816ac5e4052a03f5b605ba40b45cf06b02cadd0479620b499ab38
         type: archive
         x-checker-data:
           type: anitya

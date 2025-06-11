@@ -44,8 +44,8 @@ modules:
       - -DENABLE_QT8=OFF
       - -DENABLE_BOOST=OFF
     sources:
-      - url: https://poppler.freedesktop.org/poppler-25.05.0.tar.xz
-        sha256: 9b1627c5b76816ac5e4052a03f5b605ba40b45cf06b02cadd0479620b499ab38
+      - url: https://poppler.freedesktop.org/poppler-25.06.0.tar.xz
+        sha256: 8199532d38984fab46dbd0020ec9c40f20e928e33e9b4cc6043572603a821d83
         type: archive
         x-checker-data:
           type: anitya
@@ -60,8 +60,8 @@ modules:
         .
     sources:
       - url: https://github.com/pdfarranger/pdfarranger
-        commit: 6be21136b345a21d90d02c9ea2daf1a0d9fafb5d
-        tag: 1.12.0
+        commit: 41f26a09482ccf8ce39b01e5b5784b59e00d3727
+        tag: 1.12.1
         type: git
         x-checker-data:
           type: git

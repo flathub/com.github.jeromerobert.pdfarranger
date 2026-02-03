@@ -1,29 +1,36 @@
 id: com.github.jeromerobert.pdfarranger
 runtime: org.gnome.Platform
-
-runtime-version: '48'
-
+runtime-version: '49'
 sdk: org.gnome.Sdk
 command: pdfarranger
-
 # We offer a language selection in the settings, therefore install all languages
 separate-locales: false
-
 finish-args:
   - --socket=wayland
   - --socket=fallback-x11
   - --share=ipc
   - --filesystem=host
+cleanup:
+  - /include
+  - /lib/pkgconfig
+  - /app/bin/opj_*
+  - /share/doc
+cleanup-commands:
+  - python3 -m compileall --invalidation-mode=unchecked-hash /app
 
 modules:
+
   - flatpak-module-qpdf-pikepdf/pikepdf.yaml
+  # dependeny of python-dateutil
+  - python3-six.yaml
   - python3-python-dateutil.yaml
+  # dependeny of img2pdf
+  - python3-flit-core.yaml
 
   - name: image2pdf
     buildsystem: simple
     build-commands:
-      - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST}
-        img2pdf-*.tar.gz
+      - pip3 install --verbose --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST} img2pdf --no-build-isolation
     sources:
       # Depenedencies are satisfied through pikepdf installed earlier
       - url: https://files.pythonhosted.org/packages/8e/97/ca44c467131b93fda82d2a2f21b738c8bcf63b5259e3b8250e928b8dd52a/img2pdf-0.6.3.tar.gz
@@ -56,8 +63,7 @@ modules:
   - name: pdfarranger
     buildsystem: simple
     build-commands:
-      - pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST}
-        .
+      - pip3 install --verbose --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST} . --no-build-isolation
     sources:
       - url: https://github.com/pdfarranger/pdfarranger
         commit: 1194541b3a2ce07d1936471045106bff329bc5e3
@@ -66,8 +72,3 @@ modules:
         x-checker-data:
           type: git
           tag-pattern: ^([\d.]+)$
-
-cleanup:
-  - /include
-  - /lib/pkgconfig
-  - /app/bin/opj_*

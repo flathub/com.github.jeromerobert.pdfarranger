@@ -12,9 +12,11 @@ finish-args:
   - --filesystem=host
 cleanup:
   - /include
+  - /lib/cmake
   - /lib/pkgconfig
-  - /app/bin/opj_*
   - /share/doc
+  - /share/gir-1.0
+  - /share/man
 cleanup-commands:
   - python3 -m compileall --invalidation-mode=unchecked-hash /app
 

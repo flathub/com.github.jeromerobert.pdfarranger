@@ -30,7 +30,8 @@ modules:
   - name: image2pdf
     buildsystem: simple
     build-commands:
-      - pip3 install --verbose --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST} img2pdf --no-build-isolation
+      - pip3 install --verbose --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST}
+        img2pdf --no-build-isolation
     sources:
       # Depenedencies are satisfied through pikepdf installed earlier
       - url: https://files.pythonhosted.org/packages/8e/97/ca44c467131b93fda82d2a2f21b738c8bcf63b5259e3b8250e928b8dd52a/img2pdf-0.6.3.tar.gz
@@ -51,8 +52,8 @@ modules:
       - -DENABLE_QT8=OFF
       - -DENABLE_BOOST=OFF
     sources:
-      - url: https://poppler.freedesktop.org/poppler-26.01.0.tar.xz
-        sha256: 1cb944a4b88847f5fb6551683bc799db59f04990f5d8be07aba2acbf38601089
+      - url: https://poppler.freedesktop.org/poppler-26.03.0.tar.xz
+        sha256: 8b3c5e2a9f2ab4c3ec5029f28af1b433c6b71f0d1e7b3997aa561cf1c0ca4ebe
         type: archive
         x-checker-data:
           type: anitya
@@ -63,7 +64,8 @@ modules:
   - name: pdfarranger
     buildsystem: simple
     build-commands:
-      - pip3 install --verbose --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST} . --no-build-isolation
+      - pip3 install --verbose --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST}
+        . --no-build-isolation
     sources:
       - url: https://github.com/pdfarranger/pdfarranger
         commit: 1194541b3a2ce07d1936471045106bff329bc5e3

@@ -1,6 +1,6 @@
 id: com.github.jeromerobert.pdfarranger
 runtime: org.gnome.Platform
-runtime-version: '49'
+runtime-version: '50'
 sdk: org.gnome.Sdk
 command: pdfarranger
 # We offer a language selection in the settings, therefore install all languages

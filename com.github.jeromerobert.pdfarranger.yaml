@@ -70,8 +70,8 @@ modules:
         . --no-build-isolation
     sources:
       - url: https://github.com/pdfarranger/pdfarranger
-        commit: 1194541b3a2ce07d1936471045106bff329bc5e3
-        tag: 1.13.0
+        commit: 29f306bb6932e28d3001b098f6dad9824ab74100
+        tag: 1.14.0
         type: git
         x-checker-data:
           type: git
